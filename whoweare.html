@@ -1,93 +1,86 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
-<link rel="stylesheet" type="text/css" href="style/reset.css">
-<link rel="stylesheet" type="text/css" href="style/common.css">
-<link rel="stylesheet" type="text/css" href="style/wwr.css">
-<script type="text/javascript" src="js/modernizr.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
-
-
-
-<!--[if lt IE 9]>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/common.css">
+    <link rel="stylesheet" type="text/css" href="style/wwr.css">
+    <link rel="stylesheet" href="style/jquery-ui.css">
+	<script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <!--[if lt IE 9]>
 <link rel="stylesheet" type="text/css" href="style/ie8.css">
 <![endif]-->
+	<style>
+		.con img.listImage { height: 45px; float: left; padding: 0 10px 0 0;}
+		#.con div.listHead { height: 45px;}
+		#.con div.listHead label { padding-left: 10px}
+		.con div.indcontent { display:none;}
+	</style>
 </head>
-<body>
-<div class="heading">
-  <div id="slogan"><p id="smain">“ Nothing will be ever attempted , if all possible objections must be overcome ”<label>- Samuel Johnson</label></p></div>
-</div>
-<div id="bcauselogo"><img src="images/logo.png" id="blogo"></div>
-<div id="leftHand">
-  <div id="wwnerve"></div>
-	<div class = "menub" id = "menu1" onClick="javascript:onMenuClick(this)"></div>
-  <div class = "menub" id = "menu2" onClick="javascript:onMenuClick(this)"></div>
-  <div class = "menub" id = "menu3" onClick="javascript:onMenuClick(this)"></div>
-  <div class = "menutxt" id = "menutxt1">WHERE WE COME FROM</div>
-  <div class = "menutxt" id = "menutxt2">WHO WE ARE</div>
-    <div class = "menutxt" id = "menutxt3">WHAT WE DO</div>
-</div>
-<div id="rightHand">
-	<div class = "menub" id = "menu4" onClick="javascript:onMenuClick(this)"></div>
-  <div class = "menub" id = "menu5" onClick="javascript:onMenuClick(this)"></div>
-  <div class = "menub" id = "menu6" onClick="javascript:onMenuClick(this)"></div>
-  <div class = "menutxt" id = "menutxt5">CONNECT</div>
-    <div class = "menutxt" id = "menutxt6">THOUGHTS @<br>BCAUSE</div>
-    <div class = "menutxt" id = "menutxt4">INNOVATION FOCUS<br>AREA</div>
-</div>
-<div id="atom">
-<div class="aPoints" id="cpo"><span>TECHNOLOGY FELLOW</span><label></label></div>
-<!-- <div class="aPoints" id="pm"><span>POLICY MEMBER</span><label></label></div>
-<div class="aPoints" id="ba"><label></label><span>BUSINESS ADVISOR</span></div> -->
-<div class="aPoints" id="bm"><label></label><span>BOARD MEMBER</span></div>
-<div class="aPoints agPoints" id="foun"><label></label><span>FOUNDER</span></div>
-</div>
-<div class = "menu menuUnPressed" id = "pointsutton" ></div>
-<div id="displayBox">
 
-<div id="con1" class="con">
-<div class="chead" id="title">
-  <label>TECHNOLOGY FELLOW</label>
-</div><div class="concontent">
-<img src="images/vijay.jpg" class="icon">
-<p>A Phd Doctorate in Semiconductor Device Engineering, Masters in microprocessor and microelectronics, Dr. Vijay Mishra brings at BCausE, expertise in Micro and Nano device characterization.<br>Ex Principal technologist in Sarnoff Corporation, Princeton who has contributed in the prestigious project of European Center of Nuclear Research holds lot of patents in the field of optics, sensor and imaging technology based micro device. His articles have also been featured in many scientific journals & publications that are referred in industrial application and innovations.<br>Dr. Vijay is an associate with Indian Institute of Science (IISc), Bangalore.</p></div></div>
-<!-- <div id="con2" class="con">
-<div class="chead" id="title">
-  <label>POLICY ADVISOR</label>
-</div><div class="concontent">
-  <img src="images/ramesh.jpg" class="icon">
-<p>Dr. Ramesh Chandra Sagar is a qualified MD Anesthesia, who found his calling in the public service domain as a member of the elite Indian Administrative Service. He served the Maharashtra Cadre and has held various leadership positions including the Managing Director for organizations including IFFCO and NAFED. As head of various welfare schemes, he was entrusted with budgets upwards of INR 80 billion.</p></div></div>
-<div id="con3" class="con">
-<div class="chead" id="title">
-  <label>BUSINESS ADVISOR</label>
-</div>
-<div class="concontent"><img src="images/amit.jpg" class="icon">
-<p>Mr. Amitava Dutta is a seasoned professional entrepreneur who enjoys mentoring and providing prescriptive advice through problem definition and solution blueprint to industries spanning from heavy metal to telecommunication. He was founding member of Ushacom involved in building the product, company and securing 50 telecom service providers as customers across the USA, Europe and Asia.</p></div></div>
- --><div id="con2" class="con">
-<div class="chead" id="title">
-  <label>BOARD MEMBER</label>
-  </div>
- <div class="concontent">
-<img src="images/abhay.jpg" class="icon">
-<p>Mr. Abhay V Kale is an IIM and IIT graduate, from the first batch of software engineers working on export projects for TCS. He is widely regarded as an expert in process management and optimization, database optimization and information flow management. Currently, he is a Technical Consultant at SAP labs, USA.<br><br><i style="font-size: 0.85em;padding-bottom: 1em;">His professional expertise pans industries and geographies having worked for the pharmacy, property and nuclear industries across Europe, Australia, India and USA.</i></p></div></div>
-<div id="con3" class="con vcon">
-<div class="chead" id="title">
-  <label>FOUNDER</label>
-  </div><div class="concontent">
-  <img src="images/apu.jpg" class="icon">
-<p>Mr. Apu Saha is a telecom and software technocrat with 17+ years of working experience in core strategic technical and business leadership department (OEM & ODM). He has implemented nation- wide technical solution worth multi-million dollar from concept-to- cash, working closely with private enterprise, as well as public and IP network for companies such as- Nortel, Siemens, Alcatel Lucent, British Telecom, Uninor, to name a few.<br><br><i style="font-size: 0.85em;padding-bottom: 1em;">He is amongst few individuals who have been involved from the inception of various emerging telecom technologies deployment into real world business & public solutions such as- SS7, H.323 and SIP, MPLS, CAMEL & Embedded Software technique. He is trained in telecom and business technology by world class industrial and academic labs, such as –
-Siemens lab, IIT Chennai, Enterprise Architecting (Zachman) and RoamWare.</i></p></div></div>
-<div id="cont">
-  <div id="nl"></div>
-  <div id="nr"></div>
-</div>
-</div>
-<div id="footer"><div id="copyright">&copy; Copyrights 2013  <a href="index.html">home</a></div>
-</div>
-<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/wwr.js"></script>
+<body>
+    <div class="heading">
+        <div id="slogan">
+            <p id="smain">“ Nothing will be ever attempted , if all possible objections must be overcome ”
+                <label>- Samuel Johnson</label>
+            </p>
+        </div>
+    </div>
+    <div id="bcauselogo"><img src="images/logo.png" id="blogo">
+    </div>
+    <div id="leftHand">
+        <div id="wwnerve"></div>
+        <div class="menub" id="menu1" onClick="javascript:onMenuClick(this)"></div>
+        <div class="menub" id="menu2" onClick="javascript:onMenuClick(this)"></div>
+        <div class="menub" id="menu3" onClick="javascript:onMenuClick(this)"></div>
+        <div class="menutxt" id="menutxt1">WHERE WE COME FROM</div>
+        <div class="menutxt" id="menutxt2">WHO WE ARE</div>
+        <div class="menutxt" id="menutxt3">WHAT WE DO</div>
+    </div>
+    <div id="rightHand">
+        <div class="menub" id="menu4" onClick="javascript:onMenuClick(this)"></div>
+        <div class="menub" id="menu5" onClick="javascript:onMenuClick(this)"></div>
+        <div class="menub" id="menu6" onClick="javascript:onMenuClick(this)"></div>
+        <div class="menutxt" id="menutxt5">CONNECT</div>
+        <div class="menutxt" id="menutxt6">THOUGHTS @
+            <br>BCAUSE</div>
+        <div class="menutxt" id="menutxt4">INNOVATION FOCUS
+            <br>AREA</div>
+    </div>
+    <div id="atom">
+        <div class="aPoints" id="cpo" data="boardadvisorsbtn"><span>BOARD OF ADVISORS</span><label></label></div>
+        <div class="aPoints" id="bm" data="boarddirectorsbtn"><label></label><span>BOARD OF DIRECTORS</span></div>
+		<div class="aPoints" id="n1" data="assfellowbtn"><span>ASSOCIATE FELLOW</span><label></label></div>
+		<div class="aPoints" id="n2" data="consfellowbtn" ><span>CONSULTANT FELLOW</span><label></label></div>
+		<div class="aPoints" id="n3" data="invesbtn"><label></label><span>INVESTOR</span></div>
+		<!--<div class="aPoints" id="n4" data="newfour"><label></label><span>NEW - FOUR</span></div>-->
+        <div class="aPoints agPoints" id="foun" data="founderbtn"><label></label><span>FOUNDING MATE</span></div>
+    </div>
+    <div class="menu menuUnPressed" id="pointsutton"></div>
+    <div id="displayBox">
+		<div id="confounderbtn" class="con vcon"> <div class="chead" id="title"> <label>FOUNDING MATE</label> </div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>
+		<div id="coninvesbtn" class="con"><div class="chead" id="title"><label>INVESTOR</label></div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>
+		<!--<div id="connewfour" class="con"> <div class="chead" id="title"> <label>NEW FOUR</label></div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>-->
+        <div id="conboarddirectorsbtn" class="con"> <div class="chead" id="title"> <label>BOARD OF DIRECTORS</label></div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>
+		<div id="conboardadvisorsbtn" class="con"> <div class="chead" id="title"> <label>BOARD OF ADVISORS</label></div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>
+		<div id="conassfellowbtn" class="con"> <div class="chead" id="title"> <label>ASSOCIATE FELLOW</label></div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>
+		<div id="conconsfellowbtn" class="con"> <div class="chead" id="title"> <label>CONSULTANT FELLOW</label></div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>
+        <div id="cont">
+            <div id="bk"></div><div id="nl"></div><div id="nr"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="copyright">&copy; Copyrights 2013 <a href="index.html">home</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/pplDtls.js"></script>
+    <script type="text/javascript" src="js/wwr.js"></script>
 </body>
 </html>
