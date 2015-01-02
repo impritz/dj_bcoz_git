@@ -1,0 +1,11 @@
+div.circle {
+position:relative;
+border-radius:100%;
+behavior: url(js/PIE.htc);
+display:none;
+filter:inherit;
+}
+.pagecircles {
+border-radius:50%;
+behavior: url(js/PIE.htc);
+}

@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+body{
+	background-image:url('images/BGtile.png');
+	background-repeat:repeat;
+	overflow:hidden;
+
+}
+@font-face{font-family: open-sans-bold; src: url('fonts/OpenSans-Bold.ttf');}
+
+@font-face{font-family: helvetica-condensed-light; 
+src: url('fonts/Helvetica-Condensed-Light.eot'),url('fonts/Helvetica-Condensed-Light.ttf') format('truetype'),url('fonts/Helvetica-Condensed-Light.otf') format('opentype');
+}
+
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ @font-face {font-family:"open-sans-italic";src:url("fonts/OpenSans-Italic.eot?") format("eot"),url("fonts/OpenSans-Italic.woff") format("woff"),url("fonts/OpenSans-Italic.ttf") format("truetype"),url("fonts/OpenSans-Italic.svg#OpenSans-Italic") format("svg");font-weight:normal;font-style:normal;}
+
+
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ @font-face {font-family:"open-sans";src:url("fonts/OpenSans-Regular.eot?") format("eot"),url("fonts/OpenSans-Regular.woff") format("woff"),url("fonts/OpenSans-Regular.ttf") format("truetype"),url("fonts/OpenSans-Regular.svg#OpenSans") format("svg");font-weight:normal;font-style:normal;}
+
+
+/* @face kit by Fonts2u (http://www.fonts2u.com) */ @font-face {font-family:"open-sans-light";src:url("fonts/OpenSans-Light.eot?") format("eot"),url("fonts/OpenSans-Light.woff") format("woff"),url("fonts/OpenSans-Light.ttf") format("truetype"),url("fonts/OpenSans-Light.svg#OpenSans-Light") format("svg");font-weight:normal;font-style:normal;}
+
+
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+ @font-face {font-family:"Open-Sans-Semi-Bold-600";src:url("fonts/OpenSans-Semibold.eot?") format("eot"),url("fonts/OpenSans-Semibold.woff") format("woff"),url("fonts/OpenSans-Semibold.ttf") format("truetype"),url("fonts/OpenSans-Semibold.svg#OpenSans-Semibold") format("svg");font-weight:normal;font-style:normal;}
+
+
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
+@font-face {font-family:"Open-Sans-Semi-Bold-italic-600";src:url("fonts/OpenSans-SemiboldItalic.eot?") format("eot"),url("fonts/OpenSans-SemiboldItalic.woff") format("woff"),url("fonts/OpenSans-SemiboldItalic.ttf") format("truetype"),url("fonts/OpenSans-SemiboldItalic.svg#OpenSans-SemiboldItalic") format("svg");font-weight:normal;font-style:normal;}
+
+
+
+div.circle {
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 2s ease-in-out;
+	-ms-transition: all 2s ease-in-out;
+	transition: all 2s ease-in-out;
+    text-align: center;
+    background: rgba( 99, 99, 99, 1 );
+    position:absolute;
+    color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    
+	
+    -webkit-transform: scale( 0.01 );
+	-moz-transform: scale( 0.01 );
+	-o-transform: scale( 0.01 );
+	-ms-transform: scale( 0.01 );
+	transform: scale( 0.01 );
+    padding:20px;
+	width: 100px;
+    height: 100px;
+    line-height: 22px;
+    font-family: helvetica-condensed-light;  
+	font-size:16px;
+	
+
+  margin-top: -45px;
+}
+
+ .bottomtext{
+
+	top:83%;
+	text-align:center;
+	width:99%;
+	position:absolute;
+	color:#676767;
+	font-family:Open-Sans-Semi-Bold-italic-600;
+	font-size:16px;
+	z-index:4;
+	line-height:20px;
+	}
+
+div.opened {
+    vertical-align: middle;
+    -webkit-transform: scale( 1 );
+	-moz-transform: scale( 1 );
+	-o-transform: scale( 1 );
+	-ms-transform: scale( 1 );
+	transform: scale( 1 );
+}
+
+div.closed {
+    vertical-align: middle;
+    -webkit-transform: scale( 0 );
+	-moz-transform: scale( 0 );
+	-o-transform: scale( 0 );
+	-ms-transform: scale(0 );
+	transform: scale( 0 );
+}
+
+div span {
+    display:none;
+}
+
+
+.copyright{
+ z-index:1;
+ position: absolute;
+width:99%;
+top:97%;
+font-size:12px;
+  font-family:Open-Sans-Semi-Bold-600;
+  text-align:center;
+}
+
+
+.map{
+
+ z-index:1;
+ position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -215px;
+  margin-left: -465px;
+
+}
+.pagecircles{
+	border-radius: 50%;
+display: inline-block;
+margin-right: 20px;
+width: 13px;
+height: 13px;
+background:#eea812;
+position:absolute; 
+top:94% ;
+left:47%;
+z-index:4
+	
+
+	}
+	
+	#blackbox{
+	position:absolute;  
+	background:black; 
+	width:99%; 
+	height:97%; 
+	z-index:3; 
+	opacity:0.6; 
+	text-align:center;
+	color:#ff9600;
+	font-family:open-sans-bold;
+	font-size:40px;
+	opacity:0.8;
+	filter: alpha(opacity=80); /* IE6+ */  
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=80)"; /* IE8 */  
+	}
+	
+	#pg2{
+	left:49%
+	}
+	
+	#pg3{
+	left:51%
+	}
+	
+	#pg4{
+	left:53%
+	}
+	
+.active {
+background:#e87717;
+}
+.frame{
+	top:83%;
+	text-align:center;
+	width:99%;
+	position:absolute;
+	color:#676767;
+	font-family:open-sans-italic;
+	font-size:16px;
+	z-index:4;
+	line-height:30px;
+	}
+	
+	
+
+	
+	
+	.bottomtext1{
+	top:586px;
+	text-align:center;
+	width:99%;
+	position:absolute;
+	color:#676767;
+	font-family:Open-Sans-Semi-Bold-Italic-600;
+	font-size:9pt;
+	z-index:4;
+	line-height:20px;
+	left: 70px;
+	}
+	
+.heading{
+	top:7%;
+	text-align:center	;
+	position:absolute;
+	color:#171717;
+	font-family:Open-Sans-Semi-Bold-600;
+	font-size:25px;
+	z-index:2;
+	width:99%;
+	}
+	
+	.logo{
+	position:absolute;
+	z-index:4;
+	top:4.5%;
+	left:90%;
+	}
+	
+	.iconcontainer{
+		position:fixed;
+		z-index:2;
+	  top: 50%;
+  left: 50%;
+  margin-top: -215px;
+  margin-left: -465px;
+		
+
+
+	
+	}
+	
+	.normalmask{
+	-moz-mask-image:url(images/NU-leftHand.png);
+		-webkit-mask-image:url('images/worldmap.gif');
+		
+	}
+	
+	.greymask{
+	opacity:0.2;
+	filter: alpha(opacity=20); /* IE6+ */  
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=20)"; /* IE8 */  
+	}
+	.icons{
+	visibility:hidden;
+	}
+
+	
+
+.formula{
+ z-index:4;
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ margin-top: -53px;
+ margin-left: -313px;
+ display:none;
+
+}
+
+.idie {
+ z-index:4;
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ margin-top: -58px;
+ margin-left: -275px;
+ display:none;
+}
+#container{
+			display:none;
+		text-align:center;
+	z-index:5;
+			}
+
+#earth {
+	display:none;
+	position:fixed;
+	top:50%;
+	left:50%;
+	z-index:5;
+	width: 350px;
+	height: 350px;
+	background: url('images/map.jpg');
+	border-radius: 50%;
+	background-size: 700px;
+	box-shadow: inset 16px 0 40px 6px rgb(0, 0, 0),
+		inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+	  margin-top: -175px;
+  margin-left: -175px;	
+		
+	animation-name: rotate;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	
+	-ms-animation-name: rotate;
+	-ms-animation-duration: 4s;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-timing-function: linear;
+	
+}
+
+@keyframes graying{
+from {opacity:1}
+to{
+opacity:0.2;}
+		}
+
+
+@-webkit-keyframes graying{
+from {opacity:1}
+to{
+opacity:0.2;}
+
+}
+
+@keyframes rotate {
+  from { background-position: 0px; }
+  to { background-position: 700px; }
+}
+
+@-webkit-keyframes rotate {
+  from { background-position-x: 0px; }
+  to { background-position-x: 700px; }
+}
+@-ms-keyframes rotate {
+  from { background-position: 0px; }
+  to { background-position: 700px; }
+}
+
+.number{
+font-size:25px;
+}
+
+#mapgrey{
+display:none;
+}
+#menubutton{
+
+display:none;
+text-align:center;
+top:80%;
+width:99%;
+position:absolute;
+z-index:5;
+	
+
+}
+#menubuttonpress{
+
+display:none;
+text-align:center;
+top:80%;
+width:99%;
+position:absolute;
+z-index:4;
+	
+
+}
+#leftHand{
+
+position:fixed;
+top:50%;
+left:0%;
+margin-top:-225px;
+margin-right:-250px;
+z-index:6;
+background-image:url(images/lefthand.png); 
+background-repeat:no-repeat;
+width:500px;
+height:450px;
+display:none;
+
+}
+
+#rightHand{
+display:none;
+position:fixed;
+right:0%;
+top:50%;
+margin-top:-225px;
+margin-left:250px;
+
+background-image:url(images/righthand.png); 
+background-repeat:no-repeat;
+width:500px;
+height:450px;
+z-index:6;
+background-position:100% ;
+}
+
+
+.menub{
+cursor: pointer;
+position:absolute;
+display:none;
+height:57px;
+width:57px;
+
+z-index:6;
+}
+.menutxt{
+display:none;
+position:absolute;
+color:#333333;
+z-index:6;
+font-family:open-sans-italic;
+font-size:14pt;
+}
+
+#bcause, #rd, #lab, #bt2, #bt3{
+display:none;
+}
+
+#buttonimage:active{
+opacity:0;
+filter: alpha(opacity=0); /* IE6+ */  
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /* IE8 */  
+}
+.cookie{
+position:fixed;
+top:0%;
+left:0%;
+width:100%;
+font-family:open-sans-light;
+text-align:center;
+font-size:12px;
+padding-top:2px;
+padding-bottom:4px;
+background-color:#eeeeee;
+box-shadow:0px 3px 3px gray;
+z-index:5;
+}
+
+.circlebox{
+position:fixed;
+top:50%;
+left:50%;
+width:1100px;
+height:520px;
+margin-top:-260px;
+margin-left:-550px;
+z-index:6;
+}
+#earthpng{
+position:absolute;
+top:25%;
+}
+
+</style>
+<body>
+<div id="loader" style="z-index: 4;position: fixed;top: 50%;left: 50%;margin-top: -17px;
+margin-left: -32px;">
+	<img src = "images/loader.gif" >
+</div>
+<div id="content" style="display:none;">
+<div class = "map">
+  <img src = "images/worldmap.gif" id = "map" >
+  <img src = "images/worldmapgrey.png" id = "mapgrey" >
+</div>
+<div class="cookie">The website uses cookies. By browsing the site, you're agreeing to our <b><a>cookie policy</a></b></div>
+<div class="heading" id = "work">WE SIMPLIFY ISSUES OF</div>
+<div class="heading" id = "rd">A MULTI & INTERDISCIPLINARY R&D USING</div>
+<div id = "bcause" class="heading">
+<div style = "font-size:15pt;color:#3e3e3e;">BCausE<sup style = "font-size:10pt;color:#3e3e3e;">TM</sup> Brings</div>
+<div style = "font-size:15pt;color:#245d94;">CREATIVITY +  INTELLIGENCE = INNOVATION</div>
+<div style = "font-size:10pt;color:#3e3e3e;">Through</div>
+</div>
+<div class="heading" id = "lab"><img src = "images/idle_lab.png" ></sup></div>
+<img src = "images/logo.png" class = "logo"  >
+
+<div class = "circlebox">
+  <div class="circle" style = "top:52px; left:81px; background-color:#eea812"><span><div class = "number" id = "counter1">557664</div>acknowledgement data on internet path</span></div>
+  <div class="circle" style = "width:122px; height:122px; top:140px; left:829px; background-color:#eea812"><span><label  class = "number" id = "counter3">527364</label><div>electricity waste daily</div><div style="line-height: 3px;"><img style="margin-left: -15px;" src = "images/line.png"></div><div >due to wrong</div> <div >engineering & usage</div></span></div>
+  <div class="circle" style = "top:187px; left:287px; background-color:#eea812"><span><label class = "number" id="counter4">673598 </label> channel holding time for ring back tone</span></div>
+  <div class="circle" style = "width:125px; height:125px; top:356px; left:81px; background-color:#e87717"><span><label class = "number" id = "counter5">57</label> <div >immunisation </div><div>delivery process steps</div><div style="line-height: 3px;"><img style="margin-left: -15px;" src = "images/line.png"></div><div> leading to gap of</div > <div >DTP3 society</div ></span></div>
+  <div class="circle" style = "width:111px; height:111px; padding:25px; top:62%; left:621px; background-color:#e87717"><span><label class = "number" id = "counter6">673598 </label> <div >waste of medicines</div> <div>(capsules) daily</div><div style="line-height: 3px;"><img style="margin-left: -20px;" src = "images/line.png"></div><div> </div> <div >due to medicines</div > wrong storage </span></div>
+</div>
+
+<div class = "copyright">&copy copyright 2013 | <a href = "contactus.html">contact us </a><label id="perceptive">| These values are perceptive</label></div>
+<div class= "formula" id = "blackboxtop1"><img src = "images/formula-Centre.png"></img></div>
+<div class="bottomtext" id = "bt1"><img src = "images/formula-bottom.png"></img></div>
+<div class="bottomtext" id = "bt2"><br>
+Complex Science Originates at the Social & Consumption Value Chain</div>
+<div class="bottomtext" id = "bt3"><br>We know how to orchestrate, codify, prototype and productise <br>for social and business utility.</div>
+<div class= "idie" id = "blackboxtop2"><img src = "images/idie.png"></img></div>
+
+<div id="container"></div>
+<div class = "menu" id = "menubutton" ><img id = "buttonimage" onclick = "javascript:displayMenus()"src = "images/menuButton-b4Press.png"></div>
+<div class = "menu" id = "menubuttonpress"><img id = "buttonimage"src = "images/menuButton-onPress.png"></div>
+<div id = "leftHand">
+  <div class = "menub" id = "menu1" onClick="javascript:onMenuClick(this)" style = "top:0px;left:270px;"><img src="images/point.png"/></div>
+  <div class = "menub" id = "menu2" onClick="javascript:onMenuClick(this)" style = "top:100px;left:290px"><img src="images/point.png"/></div>
+  <div class = "menub" id = "menu3" onClick="javascript:onMenuClick(this)" style = "top:165px;left:250px;"><img src="images/point.png"/></div>
+  <div class = "menutxt" id = "menutxt1" style = "left:65%; top:3%">WHERE WE COME FROM</div>
+  <div class = "menutxt" id = "menutxt2" style = "left:70%; top:25%">WHO WE ARE</div>
+  <div class = "menutxt" id = "menutxt3" style = "left:63%; top:40%">WHAT WE DO</div>
+</div>
+<div id = "rightHand">
+  <div class = "menub" id = "menu4" onClick="javascript:onMenuClick(this)" style = "top:0px;right:270px;"><img src="images/point.png"/></div>
+  <div class = "menub" id = "menu5" onClick="javascript:onMenuClick(this)" style = "top:100px;right:290px"><img src="images/point.png"/></div>
+  <div class = "menub" id = "menu6" onClick="javascript:onMenuClick(this)" style = "top:165px;right:250px;"><img src="images/point.png"/></div>
+  <div class = "menutxt" id = "menutxt4" style = "right:63%; top:40%">COLLABORATION<br>& PARTNERS</div>
+  <div class = "menutxt" id = "menutxt5" style = "right:70%; top:25%">THOUGHTS<br>@ BCAUSE</div>
+  <div class = "menutxt" id = "menutxt6" style = "right:65%; top:3%">WHY WE DO</div>
+</div>
+ 
+<div class= "pagecircles" id = "pg1" onclick = "javascript:topage1();"></div>
+<div class= "pagecircles" id = "pg2" onclick = "javascript:topage2();"></div>
+<div class= "pagecircles" id = "pg3"onclick = "javascript:topage3();" ></div>
+<div class= "pagecircles" id = "pg4" onclick = "javascript:topage4();" ></div>
+  <table id="imagecontainer">
+ 
+</table>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/modernizr.js"></script>
+<!--[if IE 9]>-->
+<script src="js/earth.js"></script>
+<!--<![endif]-->
+<!--[if !IE]><!-->
+<script src="js/earth.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="ielte8.css" ><![endif]-->
+
+<script>
+var to10;
+var to2;
+var to3;
+var to4;
+var to5;
+var to6;
+var to20;
+var to21;
+var io;
+var to30;
+var to31;
+var to32;
+var to40;
+var to41;
+var trace;
+
+function topage1(){
+$('#map').attr('src', '');
+$('#map').attr('src', 'images/worldmap.gif');
+switch (trace){
+	case 2000:
+		clearTimeout(to20);
+		$("#rd").fadeOut(500);
+		$("#bt2").fadeOut(500);
+		$("#blackboxtop1").fadeOut(500);
+		$('#pg2').removeClass('active');
+		$(".circlebox").fadeIn(500);
+		$("#bt1").fadeIn(500);
+		$("#work").fadeIn(500);
+		$(".frame").fadeIn(500);
+		$("#map").fadeIn(500);
+		$("#mapgrey").fadeOut(500);
+		$(".cookie").fadeIn(500);
+		$("#perceptive").fadeIn(500);
+		$('div.circle').removeClass('closed');
+		$('div.circle').removeClass('opened');
+		page1();
+		break;
+	/*case 2100:
+		clearTimeout(to21);
+		$("#blackbox").fadeOut(500);
+		$('#pg2').removeClass('active');
+		$('div.circle').removeClass('closed');
+		$('div.circle').removeClass('opened');
+		page1();
+		break;*/
+	case 3000:
+		clearTimeout(to30);
+		$("#blackboxtop2").fadeOut(500);
+
+		$("#blackbox").fadeOut(500);
+		$('#pg3').removeClass('active');
+		$('div.circle').removeClass('closed');
+		$('div.circle').removeClass('opened');
+		
+	
+		
+		$("#bt3").fadeOut(500);
+		$("#bcause").fadeOut(500);
+		
+		
+	
+		$(".frame").fadeOut(500);
+		
+		$(".circlebox").fadeIn(500);
+		$("#bt1").fadeIn(500);
+		$("#work").fadeIn(500);
+		$(".frame").fadeIn(500);
+		$("#map").fadeIn(500);
+		$("#mapgrey").fadeOut(500);
+		$(".cookie").fadeIn(500);
+		$("#perceptive").fadeIn(500);
+		$('div.circle').removeClass('closed');
+		$('div.circle').removeClass('opened');
+		page1();
+		break;
+/*	case 3100:
+		clearTimeout(to31);
+		$("#blackbox").fadeOut(500);
+		$('#pg3').removeClass('active');
+		$('div.circle').removeClass('closed');
+		$('div.circle').removeClass('opened');
+		page1();
+		break;
+		
+		
+	case 3200:
+		clearTimeout(to32);
+		$("#blackbox").fadeOut(500);
+		$('#pg3').removeClass('active');
+		$('div.circle').removeClass('closed');
+		$('div.circle').removeClass('opened');
+		page1();
+		break;*/
+	case 4000:
+		clearTimeout(to40);
+		$("#lab").fadeOut(500);
+		$('#pg4').removeClass('active');
+		$(".circlebox").fadeIn(500);
+		$("#bt1").fadeIn(500);
+		$("#work").fadeIn(500);
+		$(".frame").fadeIn(500);
+		$("#map").fadeIn(500);
+		$("#mapgrey").fadeOut(500);
+		$(".cookie").fadeIn(500);
+		$("#perceptive").fadeIn(500);
+		$('div.circle').removeClass('closed');
+		$('div.circle').removeClass('opened');
+		page1();
+		break;
+		
+	case 4100:
+		clearTimeout(to41);
+		$("#lab").fadeOut(500);
+		$('#pg4').removeClass('active');
+		$(".circlebox").fadeIn(500);
+		$("#bt1").fadeIn(500);
+		$("#work").fadeIn(500);
+		$(".frame").fadeIn(500);
+		$("#map").fadeIn(500);
+		$("#mapgrey").fadeOut(500);
+		$(".cookie").fadeIn(500);
+		$("#perceptive").fadeIn(500);
+		$('div.circle').removeClass('closed');
+		$('div.circle').removeClass('opened');
+		page1();
+		break;
+	case 4200:
+	$('#container').fadeOut(500);
+	$('#menubutton').fadeOut(500);
+	$('#menubuttonpress').fadeOut(500);
+	$('#leftHand').fadeOut(500);
+	$('#rightHand').fadeOut(500);
+	$("#lab").fadeOut(500);
+		$('#pg4').removeClass('active');
+		$(".circlebox").fadeIn(500);
+		$("#bt1").fadeIn(500);
+		$("#work").fadeIn(500);
+		$(".frame").fadeIn(500);
+		$("#map").fadeIn(500);
+		$("#mapgrey").fadeOut(500);
+		$(".cookie").fadeIn(500);
+		$("#perceptive").fadeIn(500);
+		$('div.circle').removeClass('closed');
+		$('div.circle').removeClass('opened');
+		page1();
+		break;
+		
+		
+}
+}
+
+function topage2(){
+switch (trace){
+	case 1000:
+			clearTimeout(to10);
+			clearTimeout(to2);
+			clearTimeout(to3);
+			clearTimeout(to4);
+			$('#pg1').removeClass('active');
+			page2();
+			break;
+	case 1100: 
+			$('div.circle').addClass('closed');
+			clearTimeout(to2);
+			clearTimeout(to3);
+			clearTimeout(to4);
+			$('#pg1').removeClass('active');
+			page2();
+			break;
+	case 1200:
+			$('div.circle').addClass('closed');
+			$('div.circle').find('span').fadeOut( 1000 );
+			clearTimeout(to3);
+			clearTimeout(to4);
+			$('#pg1').removeClass('active');
+			page2();
+			break;
+	case 1300:clearTimeout(to5);
+		$('#pg1').removeClass('active');
+			page2();
+			break;
+	
+	
+	case 3000:
+		clearTimeout(to30);
+		//$("#blackboxtop2").fadeOut(500);
+		$("#bt3").fadeOut(500);
+		$("#bcause").fadeOut(500);
+		$("#blackboxtop2").fadeOut(500);
+	
+		$(".frame").fadeOut(500);
+		
+		$('#pg3').removeClass('active');
+		page2();
+		
+		
+		
+		
+		break;
+	/*case 3100:
+		clearTimeout(to31);
+		$('#pg3').removeClass('active');
+		page2();
+		break;
+		
+	case 3200:
+		clearTimeout(to32);
+		$('#pg3').removeClass('active');
+		page2();
+		break;*/
+	case 4000:
+	clearTimeout(to40);
+		$("#lab").fadeOut(500);
+		$('#pg4').removeClass('active');
+		page2();
+		break;
+	case 4100:
+		clearTimeout(to41);
+		$("#lab").fadeOut(500);
+		$('#pg4').removeClass('active');
+		
+		
+		$('#mapgrey').fadeIn(500);
+		page2();
+		break;
+	case 4200:
+		$('#container').fadeOut(500);
+	$('#menubutton').fadeOut(500);
+	$('#menubuttonpress').fadeOut(500);
+	$('#leftHand').fadeOut(500);
+	$('#rightHand').fadeOut(500);
+	$("#lab").fadeOut(500);
+		$('#pg4').removeClass('active');
+		$('#mapgrey').fadeIn(500);
+		page2();
+		break;
+		
+}
+}
+
+function topage3(){
+
+	switch(trace){
+		case 1000:
+			clearTimeout(to10);
+			clearTimeout(to2);
+			clearTimeout(to3);
+			clearTimeout(to4);
+			$('#map').fadeOut(500);
+			$("#perceptive").fadeOut(500);
+			$("#work").fadeOut(500);
+			$(".circlebox").fadeOut(100);
+			$("#bt1").fadeOut(500);
+			$(".frame").fadeOut(500);
+			$("#mapgrey").fadeIn(500);
+			$('#pg1').removeClass('active');
+			$(".cookie").fadeOut(500);
+			page3();
+			break;
+	case 1100: 
+			$('div.circle').addClass('closed');
+			clearTimeout(to2);
+			clearTimeout(to3);
+			clearTimeout(to4);
+			$('#map').fadeOut(500);
+			$("#perceptive").fadeOut(500);
+			$("#work").fadeOut(500);
+			$(".circlebox").fadeOut(100);
+			$("#bt1").fadeOut(500);
+			$(".frame").fadeOut(500);
+			$("#mapgrey").fadeIn(500);
+			$('#pg1').removeClass('active');
+			$(".cookie").fadeOut(500);
+			page3();
+			break;
+	case 1200:
+			$('div.circle').addClass('closed');
+			$('div.circle').find('span').fadeOut( 1000 );
+			clearTimeout(to3);
+			clearTimeout(to4);
+			$('#map').fadeOut(500);
+			$("#perceptive").fadeOut(500);
+			$("#work").fadeOut(500);
+			$(".circlebox").fadeOut(100);
+			$("#bt1").fadeOut(500);
+			$(".frame").fadeOut(500);
+			$("#mapgrey").fadeIn(500);
+			$('#pg1').removeClass('active');
+			$(".cookie").fadeOut(500);
+			page3();
+			break;
+	case 1300:clearTimeout(to5);
+		$('#map').fadeOut(500);
+			$("#perceptive").fadeOut(500);
+			$("#work").fadeOut(500);
+			$(".circlebox").fadeOut(100);
+			$("#bt1").fadeOut(500);
+			$(".frame").fadeOut(500);
+			$("#mapgrey").fadeIn(500);
+			$('#pg1').removeClass('active');
+			$(".cookie").fadeOut(500);
+			page3();
+			break;
+		case 2000:
+			clearTimeout(to20);
+		$("#rd").fadeOut(500);
+		$("#bt2").fadeOut(500);
+		$("#blackboxtop1").fadeOut(500);
+		$('#pg2').removeClass('active');
+		
+			page3();
+			break;
+		
+	case 4000:
+	clearTimeout(to40);
+		$("#lab").fadeOut(500);
+		$('#pg4').removeClass('active');
+		page3();
+		break;
+	case 4100:
+		clearTimeout(to41);
+		$("#lab").fadeOut(500);
+		$('#pg4').removeClass('active');
+		
+		
+		$('#mapgrey').fadeIn(500);
+		page3();
+		break;
+	case 4200:
+		$('#container').fadeOut(500);
+	$('#menubutton').fadeOut(500);
+	$('#menubuttonpress').fadeOut(500);
+	$('#leftHand').fadeOut(500);
+	$('#rightHand').fadeOut(500);
+	$("#lab").fadeOut(500);
+		$('#pg4').removeClass('active');
+		$('#mapgrey').fadeIn(500);
+		page3();
+		break;
+	
+	}
+
+}
+
+function topage4(){
+
+switch (trace){
+		case 1000:
+			clearTimeout(to10);
+			clearTimeout(to2);
+			clearTimeout(to3);
+			clearTimeout(to4);
+			$('#map').fadeOut(500);
+			$("#perceptive").fadeOut(500);
+			$("#work").fadeOut(500);
+			$(".circlebox").fadeOut(100);
+			$("#bt1").fadeOut(500);
+			$(".frame").fadeOut(500);
+			//$("#mapgrey").fadeIn(500);
+			$('#pg1').removeClass('active');
+			$(".cookie").fadeOut(500);
+			page4();
+			break;
+	case 1100: 
+			$('div.circle').addClass('closed');
+			clearTimeout(to2);
+			clearTimeout(to3);
+			clearTimeout(to4);
+			$('#map').fadeOut(500);
+			$("#perceptive").fadeOut(500);
+			$("#work").fadeOut(500);
+			$(".circlebox").fadeOut(100);
+			$("#bt1").fadeOut(500);
+			$(".frame").fadeOut(500);
+			//$("#mapgrey").fadeIn(500);
+			$('#pg1').removeClass('active');
+			$(".cookie").fadeOut(500);
+			page4();
+			break;
+	case 1200:
+			$('div.circle').addClass('closed');
+			$('div.circle').find('span').fadeOut( 1000 );
+			clearTimeout(to3);
+			clearTimeout(to4);
+			$('#map').fadeOut(500);
+			$("#perceptive").fadeOut(500);
+			$("#work").fadeOut(500);
+			$(".circlebox").fadeOut(100);
+			$("#bt1").fadeOut(500);
+			$(".frame").fadeOut(500);
+			//$("#mapgrey").fadeIn(500);
+			$('#pg1').removeClass('active');
+			$(".cookie").fadeOut(500);
+			page4();
+			break;
+	case 1300:clearTimeout(to5);
+		$('#map').fadeOut(500);
+			$("#perceptive").fadeOut(500);
+			$("#work").fadeOut(500);
+			$(".circlebox").fadeOut(100);
+			$("#bt1").fadeOut(500);
+			$(".frame").fadeOut(500);
+			//$("#mapgrey").fadeIn(500);
+			$('#pg1').removeClass('active');
+			$(".cookie").fadeOut(500);
+			page4();
+			break;
+	case 2000:
+			clearTimeout(to20);
+			$("#rd").fadeOut(500);
+		$("#bt2").fadeOut(500);
+		$("#blackboxtop1").fadeOut(500);
+			
+			$('#pg2').removeClass('active');
+			page4();
+			break;
+	
+	case 3000:
+		clearTimeout(to30);
+			
+		
+		$("#bt3").fadeOut(500);
+		$("#bcause").fadeOut(500);
+		$("#blackboxtop2").fadeOut(500);
+	
+		$(".frame").fadeOut(500);
+		
+		$('#pg3').removeClass('active');
+		page4();
+		break;
+	
+	
+}
+
+}
+
+
+function page4(){
+	trace = 4000;
+    $('#pg3').removeClass('active');
+	$('#pg4').addClass('active');
+	$("#bcause").fadeOut(1000);
+	$("#bt3").fadeOut(1000);
+		$("#lab").fadeIn(1000);
+	$("#blackboxtop2").fadeOut(1000);
+	//$("#blackbox").fadeOut(500);
+	
+	to40 = setTimeout (function(){
+	trace = 4100;
+	$('#mapgrey').fadeOut(2000);
+	$('div.iconcontainer').fadeOut(2000);
+	to41 = setTimeout (function(){
+	trace = 4200;
+	$('#container').fadeIn(1500);
+	$('#menubutton').fadeIn(1500);
+	$('#menubuttonpress').fadeIn(1500);
+	$('#leftHand').fadeIn(1500);
+	$('#rightHand').fadeIn(1500);
+	},1000)
+		
+	},500)
+}
+
+function page3(){
+	trace = 3000;
+		$('#pg2').removeClass('active');
+		$('#pg3').addClass('active');
+		$("#rd").fadeOut(1000);
+		$("#bt2").fadeOut(1000);
+		$("#bt3").fadeIn(1000);
+		$("#bcause").fadeIn(1000);
+		$("#blackboxtop1").fadeOut(1000);
+		$("#blackboxtop2").fadeIn(1000);
+	
+		$(".frame").fadeIn(1000);
+		
+	to30 = setTimeout(function(){
+
+	page4();
+
+	}, 7000);
+		
+
+}
+function page2(){
+		trace = 2000;
+		$("#perceptive").fadeOut(1000);
+		$("#work").fadeOut(1000);
+		$("#rd").fadeIn(1000);
+		$("#bt2").fadeIn(1000);
+		$(".circlebox").fadeOut(100);
+		$("#bt1").fadeOut(1000);
+		$(".formula").fadeIn(1000);
+		$(".frame").fadeOut(1000);
+		$("#map").fadeOut(1000);
+		$("#mapgrey").fadeIn(1000);
+		$(".cookie").fadeOut(1000);
+		//$('div.iconcontainer').removeClass('normalmask');
+		$('div.iconcontainer').addClass('greymask');
+		
+		//$(".bottomtext").fadeIn(1000);
+		$('#pg1').removeClass('active');
+		$('#pg2').addClass('active');
+		
+	to20 = setTimeout(function(){
+				page3();
+	},7500);
+
+
+
+}
+
+function onMenuClick(obj)
+{
+	var win=window.open("inProgress.html", '_blank');
+  	win.focus();
+}
+
+
+function page1(){
+/*var rownumber=14;
+var columnnumber=0;
+for (j = 1;j<=14;j++){
+var table = document.getElementById ("imagecontainer");
+var row = table.insertRow(-1);
+for(var i=0;i<=36;i++){
+row.insertCell(i).innerHTML =  "<img class = \"icons\"src  = \"images/icons/"+Math.floor((Math.random()*12)+1)+".png\" id = \"" + j+"_"+i+"\">";
+}
+}
+
+var icondisp = setInterval(function(){
+
+	value = rownumber+"_"+columnnumber;
+	document.getElementById(value).style.visibility = "visible";
+	columnnumber++;
+	if (rownumber!=1 &&columnnumber==37){
+	columnnumber = 0;
+	rownumber--;
+	
+	}
+	if (rownumber == 1 && columnnumber == 37){
+	 clearInterval(icondisp);
+	}
+	
+	
+},20);
+*/
+trace = 1000;
+$('#pg1').addClass('active');
+to10 = setTimeout(function() {
+		
+			/*if(!Modernizr.csstransitions)
+	$('div.circle').fadeIn(1000,function(){
+		$('div.circle').addClass('opened');});
+	else
+        $('div.circle').addClass('opened');*/
+		if(!Modernizr.csstransitions)
+		$('div.circle').hide();
+        $('div.circle').addClass('opened');
+		if(!Modernizr.csstransitions){
+		
+	$('div.circle').fadeIn(1000, function(){
+       this.style.removeAttribute('filter');
+});
+trace = 1100;
+		}
+		
+    }, 1000);
+
+   trace=3;
+to2 =  setTimeout( function(){
+	
+        $('div.circle').find('span').fadeIn( 1000 );
+		trace = 1200;
+    }, 2000);
+
+	
+to3 = setTimeout (function() {
+
+io =	setInterval(function updateNumber() {
+	
+	document.getElementById("counter1").innerHTML = parseInt(document.getElementById("counter1").innerHTML) +1 ;
+	//document.getElementById("counter2").innerHTML = parseInt(document.getElementById("counter2").innerHTML) +1 ;
+	document.getElementById("counter3").innerHTML = parseInt(document.getElementById("counter3").innerHTML) +1 ;
+	document.getElementById("counter4").innerHTML = parseInt(document.getElementById("counter4").innerHTML) +1 ;
+	if(document.getElementById("counter5").innerHTML == 60)
+	{
+		document.getElementById("counter5").innerHTML = 50;
+	}
+	else
+	{
+	 document.getElementById("counter5").innerHTML = parseInt(document.getElementById("counter5").innerHTML) +1 ;
+	}	
+	document.getElementById("counter6").innerHTML = parseInt(document.getElementById("counter6").innerHTML) +1 ;
+	}, 100 )
+	}, 2000);
+to4 = setTimeout (function(){
+trace = 1300;
+		if(!Modernizr.csstransitions)
+	$('div.circle').fadeOut(1000,function(){
+		$('div.circle').addClass('closed');});
+	else
+        $('div.circle').addClass('closed');
+	
+to5 = setTimeout(function() {
+	
+	page2();
+	
+	},3000);
+	
+	},14000);
+}
+$(document).ready( function( $ ) {
+
+	$("#loader").css("display", "none");
+	$("#content").css("display", "block");
+    page1();
+	if(!Modernizr.canvas){
+	$('#container').append('<img id="earthpng" src="images/earth.PNG" alt="earth">');
+	$('#earthpng').load(function(){
+	$('#earthpng').css('top',$(document).height()/5);
+	$('#earthpng').css('left',$(document).width()/2 - 232.5);
+	});
+	$(window).resize(function(){
+	$('#earthpng').css('top',$(document).height()/5);
+	$('#earthpng').css('left',$(document).width()/2 - 232.5);
+	});
+	}
+});
+
+function displayMenus(){
+$('.menub').fadeIn(1000);
+$('.menutxt').fadeIn(1000);
+$("#buttonimage").attr("src","images/menuButton3.png");
+}
+
+function displaySubmenu(){
+alert("hi");
+document.getElementById("menutxt1").style.color = '#ff8b00';
+}
+</script>
+
+<!--[if !IE]><!-->
+<script src="js/c_earth.js"></script>
+<!--<![endif]-->
+<!--[if gt IE 8]>
+<script src="js/c_earth.js"></script>
+<![endif]-->
+</body>

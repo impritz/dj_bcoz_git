@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="style/reset.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<style type="text/css">
+	html{
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+	body{
+		height: 100%;
+		width: 100%;
+		background: url('images/thoughts.png') no-repeat center #000;
+		background-size: contain;	
+	}
+	#grey{
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,0.5);
+	}
+	#dialogcontainer{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+	}
+	#dialog{
+		margin: 0 auto;
+		height: 300px;
+		width: 300px;
+		border-radius: 5px;
+		background: #bcc6d4;
+		position: relative;
+
+	}
+	#close{
+		background: #fff;
+		height: 30px;
+		width: 30px;
+		display: inline-block;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 30px;
+		position: absolute;
+		right: -15px;
+		cursor: pointer;
+		top: -15px;
+	}
+	#content p{
+		padding: 20px 15px 0px 15px;
+		text-align: center;
+		margin: 0;
+		color: #444;
+	}
+	#subs,#email{
+		text-align: center;
+	}
+	#subs{
+		margin-top: 0;
+		color: #333;
+	}
+	#email{
+	display: table-cell;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+
+	}
+	.button {
+  font-family: Arial;
+  color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 4px #666666;
+  -moz-box-shadow: 2px 2px 4px #666666;
+  box-shadow: 2px 2px 4px #666666;
+  text-shadow: 1px 1px 3px #666666;
+  border: solid #ff7038 2px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff7038), to(#ff7038));
+  background: -moz-linear-gradient(top, #ff7038, #ff7038);
+}
+.button:hover {
+  background: #fc5919;
+}
+.button:active{
+	  box-shadow: none;
+}
+.bot{
+	position: absolute;
+	bottom: 0;
+	width: 270px;
+	text-align: center;
+	border-top: 2px solid #555;
+	color: #555;
+	margin: 0px 15px;
+	padding: 10px 0;
+}
+#msg{
+	text-align: center;
+	display: none;
+}
+</style>
+<script type="text/javascript">
+	$(function(){
+		var w=(window.innerWidth==null)?(document.documentElement.offsetWidth):window.innerWidth,h=(window.innerHeight==null)?(document.documentElement.offsetHeight):window.innerHeight;
+		$('#dialog').css('top',(h-350)/2+'px');
+			if(w<300){
+				$('#dialog').width(w/3.5);
+			}
+			if(h<300){
+				$('#dialog').css('top','0px');
+			}
+		$('#close').click(function(){
+			window.location.href='index.html?main';
+		});
+		$('#emailb').click(function(){
+			var re =/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			var email=$('#email').val();
+			if(re.test(email)){
+			$.post('mailpost.php',{ email: $('#email').val()},function(data){
+				if(data=='done'){
+					alert('Thank you for subscribing to IDIE Labs at BCausE. We have updated your email in our database.');
+					// $('#msg').html('Thank you for Subscribing').show();
+				}
+				else if(data=='already'){
+				$('#msg').html('You are already Subscribed').show();
+				return;
+				}
+				else
+				$('#msg').html('Sorry Something went wrong').show();
+				// $('#msg').html(data).show();
+				$('#email').val('');
+
+			});
+			}
+			else{
+				$('#msg').html('Please Enter valid email').show();
+			}
+		});
+
+	});
+</script>
+</head>
+<body>
+<div id="grey"></div>
+<div id="dialogcontainer"><div id="dialog"><label id="close">X</label>
+<div id="content">
+<p>
+	To get the world class economical and<br> technical synthesis, analysis and<br> impact intelligence,<br><h4 id="subs">Subscribe with IDIE Labs</h4>
+</p>
+<div style="text-align:center;"><input type="text" placeholder="enter your email address" name="email" value="" id="email"></div>
+<div style="text-align:center;padding: 10px;"><input type="button" class="button" value="GET THOUGHTS" id="emailb"></div>
+<div id="msg">Please Enter valid email</div>
+<div class="bot">IDIE LAB &copy;2013</div>
+</div>
+</div></div>
+</body>
+</html>

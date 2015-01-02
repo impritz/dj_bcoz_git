@@ -1,0 +1,5 @@
+mail() on [D:\WEBDATA\bcause.in\mailtest.php:7]: To: contact@bcause.in -- Headers: From:someonelse@example.com
+mail() on [D:\WEBDATA\bcause.in\mailtest.php:7]: To: nil.15111993@gmail.com -- Headers: From:someonelse@example.com
+mail() on [D:\WEBDATA\bcause.in\mailtest.php:7]: To: contact@bcause.in -- Headers: From:someonelse@example.com
+mail() on [D:\WEBDATA\bcause.in\mailtest.php:7]: To: contact@bcause.in -- Headers: From:someonelse@example.com
+mail() on [D:\WEBDATA\bcause.in\mailtest.php:7]: To: contact@bcause.in -- Headers: From:someonelse@example.com
