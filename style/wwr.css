@@ -1,0 +1,239 @@
+/*@font-face {
+font-family: myraid;
+src: url("../fonts/myriad.eot?") format("eot"),url("../fonts/myriad.otf") format("opentype");
+}*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url('../images/BGtile.png');
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#rightHand{
+	display: block;
+}
+#leftHand{
+	display: block;
+}
+#menutxt2{
+	display: block;
+	color: #093257;
+	text-decoration: underline;
+}
+#m4{
+	top: 30%;
+}
+
+#displayBox #title{
+	background: #ede8e8;
+	opacity:0.95;
+	border-radius: 5px;
+	color: #ff6600;
+	font-family: myraid,'Myriad Pro',sans-serif;
+	font-style: normal;
+	font-size: 1.2em;
+	padding: 2% 0 1% 1%;
+	text-align: center;
+}
+#menubutton{
+	text-align:center;
+	top:80%;
+	position:absolute;
+	z-index:5;
+}
+.menuUnPressed{
+	display: none;
+	height: 10%;
+	background: url('../images/menuButton-b4Press.png');
+	background-size: 100% 100%;
+}
+.menuPressed{
+	display: none;
+	height: 10%;
+	background: url('../images/menuButton-onPress.png');
+	background-size: 100% 100%;
+}
+#menubuttonpress{
+	display: none;
+	text-align:center;
+	top:80%;
+	width:99%;
+	position:absolute;
+	z-index:4;
+}
+#menu2{
+background: url('../images/hgpoint.png') no-repeat;
+background-size: 100% 100%;
+background-position: 70% 70%;
+}
+#displayBox{
+	display: none;
+	font-family: myraid,'Myriad Pro',sans-serif;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	width: 27%;
+	background: #b4c1d3;
+	height: 350px;
+	opacity:0.8;
+	color: #093257;
+	border-radius: 10px;
+	z-index: 6;
+}
+.icon{
+	width: 80px;
+	height: 80px;
+	float: right;
+	padding: 0px 0 10px 10px;
+}
+.con{
+	display: none;
+}
+.con img{
+	padding: 20px 20px 10px 20px;
+}
+.con p{
+	padding: 20px 20px 40px 20px;
+	overflow: visible !important;
+}
+.vcon{
+	display: block;
+	/*overflow: auto;*/
+}
+.concontent{
+	overflow: auto;
+}
+.aPoints{
+	position: absolute;
+cursor: pointer;
+}
+#atom{
+	display: none;
+	height: 35%;
+	position: absolute;
+	left: 28%;
+	top: 38%;
+	background: url('../images/atom.png') no-repeat;
+	background-size: 100% 100%;
+}
+#wwnerve
+{
+	height: 100%;
+	width: 100%;
+	background: url('../images/wwrnerve.png')  no-repeat center top transparent;
+	background-size: 100% 100%;
+
+}
+.aPoints label,.agPoints label{
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	background: url('../images/elipse.png');
+	background-size: 100% 100%;
+	margin: 0 -1em -0.6em -1em;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+}
+.agPoints{
+	color: #ff6600;
+}
+.agPoints label{
+	background: url('../images/glowelpse.png');
+	background-size: 100% 100%;	
+}
+#atom span{
+	font-family: myraid;
+	font-weight: bold;
+	display: inline-block;
+	font-size: 0.85em;
+	text-shadow: -2px -2px 5px #FFF,2px 2px 5px #FFF;
+	background: #fff;
+	opacity: 0.75;
+	background-size: 100% 100%;
+	border-radius: 15px;
+	padding: 0 5px 0 10px;
+	cursor: pointer;
+}
+.chead label{
+	font-family: myraid,'Myriad Pro',sans-serif;
+	display: inline-block;
+	height: 1.5em;
+	font-size: 1.15em;
+}
+
+#foun{
+top: 37%;
+left: 42%;
+}
+#pm{
+top: 16%;
+left: -26%;
+}
+#ba{
+	top: 11%;
+right: -20%;
+}
+#bm{
+	top: 70%;
+right: -5%;
+}
+#cpo{
+top: 74%;
+left: -31%;
+}
+
+@media all and (min-height: 500px) and (max-height: 600px){
+    /* iPhone only */
+	#foun{
+	top: 35%;
+	left: 40%;
+	}
+	#pm{
+	top: 7%;
+	left: -44%;
+	}
+	#ba{
+		top: 11%;
+	right: -20%;
+	}
+	#bm{
+	top: 66%;
+	right: -18%;
+	}
+	#cpo{
+	top: 74%;
+	left: -50%;
+	}
+
+}
+#foun label{
+	width: 4em;
+	height: 4em;
+	margin: 0 -1.1em -1.5em -1em;
+}
+#atom #pm span{
+padding: 0 10px 0 5px;
+}
+#atom #cpo span{
+	padding: 0 10px 0 5px;
+}
+#cont li{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #a1a1a1;
+	margin-right: 5px;
+	border-radius: 10px;
+}
+#cont li.sel{
+	background-color:#ff6600;
+}
+#cont ul{
+	text-align: center;
+}

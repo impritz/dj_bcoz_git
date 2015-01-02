@@ -1,0 +1,70 @@
+#leftHand{
+	-pie-background: url('images/lefthand.png') no-repeat 100% 100%/100% 100%;
+    behavior: url(js/PIE.htc);
+}
+#wwnerve{
+	position: relative;
+	-pie-background: url('images/wwnerve.png') no-repeat 100% 100%/100% 100%;
+    behavior: url(js/PIE.htc);
+}
+#rightHand{
+	-pie-background: url('images/righthand.png') no-repeat 100% 100%/100% 100%;
+    behavior: url(js/PIE.htc);
+}
+.points{
+	-pie-background: url('images/point.png') no-repeat 100% 100%/100% 100%;
+    behavior: url(js/PIE.htc);
+}
+#brain{
+	-pie-background: url('images/brain.png') no-repeat 100% 100%/100% 100%;
+    behavior: url(js/PIE.htc);
+}
+.bPoints{
+	-pie-background: url('images/bpoint.png') no-repeat 100% 100%/100% 100%;
+    behavior: url(js/PIE.htc);
+}
+.bgPoints{
+	-pie-background: url('images/bgpoint.png') no-repeat 100% 100%/100% 100%;
+    behavior: url(js/PIE.htc);
+}
+.menuUnPressed{
+	-pie-background: url('images/menuButton-b4Press.png') no-repeat 100% 100%/100% 100%;
+   	behavior: url(js/PIE.htc);
+}
+.menuPressed{
+	-pie-background: url('images/menuButton-onPress.png') no-repeat 100% 100%/100% 100%;
+   	behavior: url(js/PIE.htc);
+}
+.nerveng{
+	-pie-background: url('images/bpoint.png') no-repeat 100% 100%/100% 100%;
+	behavior: url(js/PIE.htc);
+}
+.nerve,.nerveg{
+	-pie-background: url('images/bgpoint.png') no-repeat 100% 100%/100% 100%;
+   	behavior: url(js/PIE.htc);
+}
+#atom{
+	-pie-background: url('images/atom.png') no-repeat 100% 100%/100% 100%;
+   	behavior: url(js/PIE.htc);
+}
+#vman{
+	-pie-background: url('images/vman.png') no-repeat 100% 100%/100% 100%;
+   	behavior: url(js/PIE.htc);
+}
+#sector{
+	-pie-background: url('images/sector.png') no-repeat 100% 100%/100% 100%;
+	behavior: url(js/PIE.htc);
+}
+#tech{
+	position: relative;
+	-pie-background: url('images/tech.png') no-repeat 100% 100%/100% 100%;
+	behavior: url(js/PIE.htc);
+}
+#r1nerve{
+	-pie-background: url('images/r1nerve.png') no-repeat 100% 100%/100% 100%;	
+	behavior: url(js/PIE.htc);
+}
+.elements{
+	-pie-background: url('images/bpoint.png') no-repeat 100% 100%/100% 100%;
+	behavior: url(js/PIE.htc);
+}

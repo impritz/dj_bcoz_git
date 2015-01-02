@@ -1,0 +1,204 @@
+@font-face {font-family:"open-sans-italic";src:url("../fonts/OpenSans-Italic.eot?") format("eot"),url("../fonts/OpenSans-Italic.woff") format("woff"),url("../fonts/OpenSans-Italic.ttf") format("truetype"),url("../fonts/OpenSans-Italic.svg#OpenSans-Italic") format("svg");font-weight:normal;font-style:normal;}
+@font-face {
+font-family: myraid;
+src: url("../fonts/myriad.eot?") format("eot"),url("../fonts/myriad.otf") format("opentype");
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url('../images/BGtile.png');
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.menutxt{
+position:absolute;
+z-index:6;
+}
+#menu3{
+	background: url('../images/hgpoint.png') no-repeat;
+	background-size: 100% 100%;
+	background-position: 70% 70%;	
+}
+.logo{
+	position:absolute;
+	z-index:4;
+	top:4.5%;
+	right: 50px;
+	/*left:90%;*/
+}
+
+#rightHand{
+	display: block;
+}
+#leftHand{
+	display: block;
+}
+#menutxt3{
+	display: block;
+	color: #093257;
+	text-decoration: underline;
+}
+#m4{
+	top: 30%;
+}
+#menubutton{
+	text-align:center;
+	top:80%;
+	position:absolute;
+	z-index:5;
+}
+.menuUnPressed{
+	display: none;
+	height: 10%;
+	background: url('../images/menuButton-b4Press.png');
+	background-size: 100% 100%;
+}
+.menuPressed{
+	display: none;
+	height: 10%;
+	background: url('../images/menuButton-onPress.png');
+	background-size: 100% 100%;
+}
+#menubuttonpress{
+	display: none;
+	text-align:center;
+	top:80%;
+	width:99%;
+	position:absolute;
+	z-index:4;
+}
+.dPoints,.dgPoints{
+	position: absolute;
+	cursor: pointer;
+	color: #8393ca;
+	opacity: 0.9;
+	display: inline-block;
+	text-align: center;
+	font-family: myraid;
+	font-weight: bold;
+}
+.dPoints span,.dgPoints span{
+	background: #fff;
+	border-radius: 15px;
+		padding: 0 5px 0 10px;
+
+}
+.dPoints label,.dgPoints label{
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	background: url('../images/elipse.png');
+	background-size: 100% 100%;
+	margin: 0 -1em -0.6em -1em;
+	position: relative;
+}
+#wwdnerve{
+	height: 100%;
+	width: 100%;
+	background: url('../images/wwdnerve.png')  no-repeat center top transparent;
+	background-size: 100% 100%;
+}
+.nerve{
+	display: none;
+	position: absolute;
+	height: 4%;
+	background: url('../images/bgpoint.png');
+	background-size: 100% 100%;
+}
+.nerve span{
+	/*display: none;*/
+	font-family: open-sans-italic;
+	font-size: 0.75em;
+	text-shadow: -2px -2px 5px #FFF,2px 2px 5px #FFF;
+	position: absolute;
+	left: 110%;
+	top: 15%;
+}
+#analysis {
+    right: 30%;
+    top: 47%;
+}
+#compu {
+    right: 52%;
+    top: 55%;
+}
+#is {
+    right: 68%;  
+    top: 65%;
+}
+#advisory {
+    left: 5%;  
+    top: 78%;
+}
+.dgPoints{
+	color: #ff6600;
+}
+.dgPoints label{
+	background: url('../images/glowelpse.png');
+	background-size: 100% 100%;	
+}
+#isol{
+	position: absolute;
+	height: 45%;
+	left: 25%;
+	top: 25%;
+	background: url('../images/wwd.png') no-repeat;
+	background-size: 100% 100%;
+	display: none;
+}
+#displayBox{
+	font-family: myraid,'Myriad Pro',sans-serif;
+	position: absolute;
+	top: 25%;
+	left: 30%;
+	border-radius: 10px;
+	width: 450px;
+	background: #b4c1d3;
+	opacity: 0.8;
+	color: #093257;
+	height: 300px;
+	display: none;
+}
+
+#iso{
+	top: 37%;
+	left: auto;
+	right: 22%;
+}
+#re{
+	top: 8%;
+	right: 10%;
+}
+#arch{
+	top: 40%;
+	right: 25%;
+}
+#pcd span{
+	padding: 0 15px 0 5px;
+}
+#pro{
+	bottom: 25%;
+	right: 10%;
+}
+#pcd{
+	top: 15%;
+}
+#displayBox #title{
+	background: #ede8e8;
+	opacity:0.95;
+	border-radius: 5px;
+	color: #ff6600;
+	font-family: myraid,'Myriad Pro',sans-serif;
+	font-style: normal;
+	font-size: 1.2em;
+	padding: 2% 0 1% 1%;
+	text-align: center;
+}
+#displayBox p{
+	padding: 2% 2% 0 35%;
+}

@@ -1,0 +1,151 @@
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-22 19:01:37
+#Fields: date time s-sitename cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2013-08-22 19:01:36 W3SVC628 GET / - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - - bcause.in 200 0 0 30230 290 21122
+2013-08-22 19:01:40 W3SVC628 GET /images/worldmapgrey.png - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 41136 354 4009
+2013-08-22 19:01:42 W3SVC628 GET /images/point.png - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 5352 347 4648
+2013-08-22 19:01:42 W3SVC628 GET /images/loader.gif - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 6244 348 4851
+2013-08-22 19:01:45 W3SVC628 GET /images/worldmap.gif - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 60992 350 7753
+2013-08-22 19:01:46 W3SVC628 GET /images/menuButton-b4Press.png - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 8138 360 5506
+2013-08-22 19:01:46 W3SVC628 GET /images/menuButton-onPress.png - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 8834 360 9718
+2013-08-22 19:01:49 W3SVC628 GET /images/idie.png - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 27304 346 7113
+2013-08-22 19:01:49 W3SVC628 GET /images/line.png - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 1217 346 4789
+2013-08-22 19:01:50 W3SVC628 GET /images/formula-bottom.png - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 10670 356 8096
+2013-08-22 19:01:51 W3SVC628 GET /images/idle_lab.png - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 8266 350 5413
+2013-08-22 19:01:54 W3SVC628 GET /images/logo.png - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 14250 346 7363
+2013-08-22 19:01:57 W3SVC628 GET /images/BGtile.png - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 3167 348 6817
+2013-08-22 19:02:01 W3SVC628 GET /js/c_earth.js - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 2252 327 8845
+2013-08-22 19:02:01 W3SVC628 GET /js/modernizr.js - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 8412 329 11934
+2013-08-22 19:02:03 W3SVC628 GET /images/formula-Centre.png - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 0 20096 356 9672
+2013-08-22 19:02:07 W3SVC628 GET /images/lefthand.png - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 64 0 350 1981
+2013-08-22 19:02:09 W3SVC628 GET /images/righthand.png - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 64 0 351 3338
+2013-08-22 19:02:11 W3SVC628 GET /js/jquery.js - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 64 0 326 33945
+2013-08-22 19:02:23 W3SVC628 GET /js/earth.js - - 27.7.223.180 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+Phone+OS+7.5;+Trident/5.0;+IEMobile/9.0;+NOKIA;+Lumia+800) - http://bcause.in/ bcause.in 200 0 64 0 325 34054
+2013-08-22 19:02:51 W3SVC628 GET /images/line.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 1236 370 592
+2013-08-22 19:02:51 W3SVC628 GET / - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - - www.bcause.in 200 0 0 30249 353 2262
+2013-08-22 19:02:51 W3SVC628 GET /images/loader.gif - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 6263 372 904
+2013-08-22 19:02:51 W3SVC628 GET /images/point.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 5371 371 873
+2013-08-22 19:02:51 W3SVC628 GET /images/BGtile.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 3186 372 889
+2013-08-22 19:02:51 W3SVC628 GET /images/formula-bottom.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 10689 380 1154
+2013-08-22 19:02:51 W3SVC628 GET /images/idle_lab.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 8285 374 1216
+2013-08-22 19:02:51 W3SVC628 GET /images/menuButton-b4Press.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 8157 384 1138
+2013-08-22 19:02:51 W3SVC628 GET /images/menuButton-onPress.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 8853 384 1154
+2013-08-22 19:02:51 W3SVC628 GET /js/modernizr.js - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 8431 340 1216
+2013-08-22 19:02:52 W3SVC628 GET /images/formula-Centre.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 20115 380 1482
+2013-08-22 19:02:52 W3SVC628 GET /js/c_earth.js - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 2271 338 577
+2013-08-22 19:02:52 W3SVC628 GET /images/logo.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 14269 370 1747
+2013-08-22 19:02:52 W3SVC628 GET /images/idie.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 27323 370 1716
+2013-08-22 19:02:53 W3SVC628 GET /images/worldmap.gif - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 61011 374 2636
+2013-08-22 19:02:54 W3SVC628 GET /images/worldmapgrey.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 41155 378 3697
+2013-08-22 19:02:56 W3SVC628 GET /js/jquery.js - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 92916 337 5272
+2013-08-22 19:03:19 W3SVC628 GET /js/earth.js - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 412420 336 28579
+2013-08-22 19:03:20 W3SVC628 GET /fonts/OpenSans-SemiboldItalic.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 419 592
+2013-08-22 19:03:20 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 413 608
+2013-08-22 19:03:20 W3SVC628 GET /fonts/OpenSans-Light.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 410 624
+2013-08-22 19:03:23 W3SVC628 GET /fonts/OpenSans-Light.ttf - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 33695 409 2074
+2013-08-22 19:03:24 W3SVC628 GET /fonts/Helvetica-Condensed-Light.eot - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 24303 420 1513
+2013-08-22 19:03:24 W3SVC628 GET /fonts/OpenSans-Semibold.ttf - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 33607 412 2714
+2013-08-22 19:03:24 W3SVC628 GET /fonts/OpenSans-SemiboldItalic.ttf - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 30267 418 2964
+2013-08-22 19:03:26 W3SVC628 GET /fonts/Helvetica-Condensed-Light.ttf - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 25262 420 2308
+2013-08-22 19:03:28 W3SVC628 GET /images/map.jpg - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 86886 369 8283
+2013-08-22 19:03:29 W3SVC628 GET /favicon.ico - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - - www.bcause.in 404 0 2 1424 364 577
+2013-08-22 19:03:30 W3SVC628 GET /favicon.ico - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - - www.bcause.in 404 0 2 1424 364 561
+2013-08-22 19:03:34 W3SVC628 GET /contactus.html - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 1400 399 608
+2013-08-22 19:03:35 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/contactus.html www.bcause.in 404 3 50 1424 427 577
+2013-08-22 19:03:37 W3SVC628 GET /images/contactus.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/contactus.html www.bcause.in 200 0 0 21070 389 2293
+2013-08-22 19:05:43 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/contactus.html www.bcause.in 404 3 50 1424 427 1076
+2013-08-22 19:05:49 W3SVC628 GET /fonts/OpenSans-SemiboldItalic.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 419 733
+2013-08-22 19:05:49 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 413 811
+2013-08-22 19:05:50 W3SVC628 GET /fonts/OpenSans-Light.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 410 1450
+2013-08-22 19:06:28 W3SVC628 GET /fonts/OpenSans-Italic.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 411 3837
+2013-08-22 19:06:29 W3SVC628 GET /inProgress.html - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 1396 400 608
+2013-08-22 19:06:29 W3SVC628 GET /images/menuButton3.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 9420 377 5725
+2013-08-22 19:06:30 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 577
+2013-08-22 19:06:32 W3SVC628 GET /images/lefthand.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 146144 374 9625
+2013-08-22 19:06:32 W3SVC628 GET /fonts/OpenSans-Italic.ttf - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 30015 410 3088
+2013-08-22 19:06:33 W3SVC628 GET /images/righthand.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 200 0 0 153239 375 11060
+2013-08-22 19:06:35 W3SVC628 GET /images/msg.png - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 200 0 0 60332 384 4524
+2013-08-22 19:06:38 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 561
+2013-08-22 19:06:42 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 561
+2013-08-22 19:06:45 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 577
+2013-08-22 19:06:47 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 561
+2013-08-22 19:06:50 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 577
+2013-08-22 19:06:55 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 577
+2013-08-22 19:08:47 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 592
+2013-08-22 19:09:48 W3SVC628 GET /fonts/OpenSans-Light.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 410 920
+2013-08-22 19:09:48 W3SVC628 GET /fonts/OpenSans-SemiboldItalic.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 419 920
+2013-08-22 19:09:48 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 413 1123
+2013-08-22 19:10:36 W3SVC628 GET /fonts/OpenSans-SemiboldItalic.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 419 561
+2013-08-22 19:10:36 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 413 561
+2013-08-22 19:10:36 W3SVC628 GET /fonts/OpenSans-Light.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 410 561
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-22 22:19:46
+#Fields: date time s-sitename cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2013-08-22 22:19:46 W3SVC628 GET /robots.txt - - 66.249.74.128 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.bcause.in 404 0 2 1405 263 546
+2013-08-22 22:19:47 W3SVC628 GET / - - 66.249.74.128 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.bcause.in 200 0 0 30230 227 1560
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-23 02:32:16
+#Fields: date time s-sitename cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2013-08-23 02:32:15 W3SVC628 HEAD / - - 202.137.234.184 HTTP/1.1 - - - www.bcause.in 200 0 0 249 53 202
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-23 06:26:42
+#Fields: date time s-sitename cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2013-08-23 06:26:42 W3SVC628 GET /fonts/OpenSans-SemiboldItalic.woff - - 122.177.56.130 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/29.0.1547.0+Safari/537.36 - http://www.bcause.in/ www.bcause.in 404 3 64 1072 332 105300
+2013-08-23 06:26:44 W3SVC628 GET /favicon.ico - - 122.177.56.130 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/29.0.1547.0+Safari/537.36 - - www.bcause.in 404 0 64 0 277 37939
+2013-08-23 06:26:47 W3SVC628 GET /fonts/OpenSans-Italic.woff - - 122.177.56.130 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/29.0.1547.0+Safari/537.36 - http://www.bcause.in/ www.bcause.in 404 3 64 1072 324 99200
+2013-08-23 06:26:47 W3SVC628 GET /fonts/OpenSans-Light.woff - - 122.177.56.130 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/29.0.1547.0+Safari/537.36 - http://www.bcause.in/ www.bcause.in 404 3 64 1072 323 110728
+2013-08-23 06:26:48 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 122.177.56.130 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/29.0.1547.0+Safari/537.36 - http://www.bcause.in/ www.bcause.in 404 3 64 1072 326 111274
+2013-08-23 06:26:48 W3SVC628 GET /favicon.ico - - 122.177.56.130 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/29.0.1547.0+Safari/537.36 - - www.bcause.in 404 0 2 1405 277 358
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-23 09:03:10
+#Fields: date time s-sitename cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2013-08-23 09:03:10 W3SVC628 GET /robots.txt - - 66.249.74.128 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.bcause.in 404 0 2 1405 263 608
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-23 14:53:33
+#Fields: date time s-sitename cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2013-08-23 14:53:32 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 413 1138
+2013-08-23 14:53:32 W3SVC628 GET /fonts/OpenSans-Light.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 410 1045
+2013-08-23 14:53:32 W3SVC628 GET /fonts/OpenSans-SemiboldItalic.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 419 1092
+2013-08-23 14:53:34 W3SVC628 GET /favicon.ico - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - - www.bcause.in 404 0 2 1424 364 577
+2013-08-23 14:54:07 W3SVC628 GET /fonts/OpenSans-Italic.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 411 624
+2013-08-23 14:54:09 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 577
+2013-08-23 14:54:12 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/contactus.html www.bcause.in 404 3 50 1424 427 592
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-23 15:59:35
+#Fields: date time s-sitename cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2013-08-23 15:59:34 W3SVC628 GET /fonts/OpenSans-SemiboldItalic.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 419 764
+2013-08-23 15:59:34 W3SVC628 GET /fonts/OpenSans-Light.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 410 764
+2013-08-23 15:59:34 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 413 780
+2013-08-23 16:00:00 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/contactus.html www.bcause.in 404 3 50 1424 427 561
+2013-08-23 16:02:02 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 413 577
+2013-08-23 16:02:02 W3SVC628 GET /fonts/OpenSans-SemiboldItalic.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 419 577
+2013-08-23 16:02:02 W3SVC628 GET /fonts/OpenSans-Light.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 410 592
+2013-08-23 16:03:46 W3SVC628 GET /fonts/OpenSans-Italic.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 411 577
+2013-08-23 16:03:48 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 561
+2013-08-23 16:03:50 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 608
+2013-08-23 16:03:53 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 592
+2013-08-23 16:03:56 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 577
+2013-08-23 16:03:58 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 577
+2013-08-23 16:10:29 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 577
+2013-08-23 16:10:33 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 577
+2013-08-23 16:10:35 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/contactus.html www.bcause.in 404 3 50 1424 427 577
+2013-08-23 16:11:03 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/contactus.html www.bcause.in 404 3 50 1424 427 577
+2013-08-23 16:12:33 W3SVC628 GET /fonts/OpenSans-SemiboldItalic.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 419 561
+2013-08-23 16:12:33 W3SVC628 GET /fonts/OpenSans-Light.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 410 592
+2013-08-23 16:12:33 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 413 608
+2013-08-23 16:12:53 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 413 577
+2013-08-23 16:12:53 W3SVC628 GET /fonts/OpenSans-SemiboldItalic.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 419 577
+2013-08-23 16:12:53 W3SVC628 GET /fonts/OpenSans-Light.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 410 592
+2013-08-23 16:13:30 W3SVC628 GET /fonts/OpenSans-Italic.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/ www.bcause.in 404 3 50 1424 411 577
+2013-08-23 16:13:34 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 577
+2013-08-23 16:13:36 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 592
+2013-08-23 16:13:39 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 592
+2013-08-23 16:13:41 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/inProgress.html www.bcause.in 404 3 50 1424 428 577
+2013-08-23 16:13:48 W3SVC628 GET /fonts/OpenSans-Semibold.woff - - 163.231.6.71 HTTP/1.0 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:23.0)+Gecko/20100101+Firefox/23.0 - http://www.bcause.in/contactus.html www.bcause.in 404 3 50 1424 427 577

@@ -1,0 +1,198 @@
+@font-face {font-family:"open-sans-italic";src:url("../fonts/OpenSans-Italic.eot?") format("eot"),url("../fonts/OpenSans-Italic.woff") format("woff"),url("../fonts/OpenSans-Italic.ttf") format("truetype"),url("../fonts/OpenSans-Italic.svg#OpenSans-Italic") format("svg");font-weight:normal;font-style:normal;}
+@font-face {
+font-family: myraid;
+src: url("../fonts/myriad.eot?") format("eot"),url("../fonts/myriad.otf") format("opentype");
+}
+#leftHand{
+	display: block;
+}
+
+#rightHand{
+	display: block;
+}
+#menu4{
+	background: url('../images/hgpoint.png') no-repeat;
+	background-size: 100% 100%;
+	background-position: 70% 70%;
+}
+#menutxt4{
+	display: block;
+	color: #093257;
+	text-decoration: underline;
+}
+#m4{
+	top: 30%;
+}
+#menubutton{
+	text-align:center;
+	top:80%;
+	position:absolute;
+	z-index:5;
+}
+.menuUnPressed{
+	display: none;
+	height: 10%;
+	background: url('../images/menuButton-b4Press.png');
+	background-size: 100% 100%;
+}
+.menuPressed{
+	display: none;
+	height: 10%;
+	background: url('../images/menuButton-onPress.png');
+	background-size: 100% 100%;
+}
+#menubuttonpress{
+	display: none;
+	text-align:center;
+	top:80%;
+	width:99%;
+	position:absolute;
+	z-index:4;
+}
+.pL{
+	font-family: myraid;
+	font-weight: bold;
+	font-size: large;
+	float: right;
+	cursor: pointer;
+	position: relative;
+margin: -3em 0em 0em -3em;
+}
+.pL span{
+	background:#fff;
+	border-radius: 10px;
+	padding: 0px 10px 0px 20px;
+	max-width: 150px;
+	display: inline-block;
+}
+.pL label{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url('../images/elipse.png');
+	background-size: 100% 100%;
+	margin: 0 -1.5em -1em -1em;
+	position: relative;
+}
+#vman{
+	height: 55%;
+	position: inherit;
+	left: -1000px;
+	top: 24%;
+	background: url('../images/vman.png') no-repeat;
+	background-size: 100% 100%;
+/*	display: none;
+*/}
+#sector,#tech,#r1nerve{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+#sector{
+	background: url('../images/sector.png') no-repeat;
+	background-size:100% 100%;
+	background-position:100% 100%;
+}
+#sector .elements{
+	z-index: 1;
+}
+#tech{
+	/*display: none;*/
+	background: url('../images/sector.png') no-repeat;
+	background-size:100% 100%;
+	background-position:100% 100%;
+}
+#r1nerve{
+	background: url('../images/r1nerve.png') no-repeat;	
+	background-size:100% 100%;
+	background-position:100% 100%;
+}
+.nerveng{
+	display: none;
+	position: absolute;
+	height: 4%;
+	background: url('../images/bpoint.png') no-repeat;
+	background-size:100% 100%;
+	background-position:100% 100%;
+	cursor: pointer;
+}
+.nerveg{
+	background: url('../images/bgpoint.png') no-repeat;
+	background-size:100% 100%;
+	background-position:100% 100%;
+}
+.nerveng span{
+	/*display: none;*/
+	font-family: open-sans-italic;
+	font-size: 0.75em;
+	text-shadow: -2px -2px 5px #FFF,2px 2px 5px #FFF;
+	position: absolute;
+	right: 120%;
+}
+.selcolor{
+		color: #ff6600;
+}
+.selcolor label{
+	background: url('../images/oelipse.png');
+	background-size: 100% 100%;
+}
+#tec{
+	top: 34%;
+	right: 14%;
+}
+#sec{
+	top: 14%;
+	right: 36%;
+}
+.elements,.gelements{
+	position: absolute;
+	height: 40px;
+	background: url('../images/ibpoint.png') no-repeat;
+	background-size:100% 100%;
+	background-position:100% 100%;
+}
+.gelements{
+	background: url('../images/hhgpoint.png') no-repeat;	
+	background-size:100% 100%;
+	background-position:100% 100%;
+}
+
+.elements,.gelements{
+ top: -5%;
+right: 44.5%;
+}
+ .elements span,.gelements span{
+	font-family: open-sans-italic;
+	position: relative;
+	left: 95%;
+	display: inline-block;
+	width: 200px;
+	text-shadow: -2px -2px 5px #FFF,2px 2px 5px #FFF;
+	/*color: #ff6600;*/
+	top: 20%;
+}
+.lele span{
+	left: -200px;
+	/*width: 350%;
+	top: 0%;*/
+	text-align: right
+}
+.blocks {
+    display:block;
+    width:;
+    height:; /* you need to specify width and height values */
+    position:relative;
+    cursor:pointer;
+}
+  
+ul.reset,
+ul.reset li {
+    display:block;
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+  
+ul.reset li {
+    position:absolute;
+}
