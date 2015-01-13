@@ -36,7 +36,7 @@ var people = [
         "name": "Mr. Viresh Shankar Mathur",
         "designation": "Director",
         "image": "images/viresh.jpg",
-        "text": "An IRS officer. He served in various capacities in the Income Tax department and retired as Director General (Systems). He was involved in the complete computerisation of the Income tax department between 2002-2006, arguably the largest Information Technology project in the country. He also served the Government of India as Director and Controller of Aluminium, Ministry of Steel and Mines between 1985 -1990."}
+        "text": "An ex-IRS officer. He served in various capacities in the Income Tax department and retired as Director General (Systems). He was involved in the complete computerisation of the Income tax department between 2002-2006, arguably the largest Information Technology project in the country. He also served the Government of India as Director and Controller of Aluminium, Ministry of Steel and Mines between 1985 -1990."}
 		,{"type":"boarddirectorsbtn",
 		"name":"Mr. Abhay V Kale",
 		"designation":"Director",
