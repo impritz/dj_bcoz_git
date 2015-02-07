@@ -6,66 +6,51 @@ $(function() {
 	$('.aPoints').height($('.aPoints').width());
 	$('#menubutton').width($('#menubutton').height()).css('left',(w-$('#menubutton').width())/2);
 
-
-	var wh=$('#isol').height();
-	$('#isol').width($('#isol').height()*1.13);
-	if(typeof(wh.search)!='undefined'&&wh.search('%')!=-1||wh==45){
-    $("#isol").css('width',(wh*1.13/100*h)+'px');
+/*Moved to CSS
+	var wh = $('#isol').height();
+    if (typeof(wh.search) != 'undefined' && wh.search('%') != -1 || wh == 35) {
+        $("#isol").css('width', (wh * 1 / 100 * h) + 'px');
+    } else {
+        $("#isol").width($('#isol').height() * 0.9);
     }
-    else{
-        $("#isol").width($('#isol').height()*1.13);
+    if (!(w > 1300 && h > 600)) {
+        $('#displayBox').width(w * 0.3);
+        $('#displayBox').height(h * 0.6);
     }
-    if(w>1300 && h> 600){
-        $('#isol').height(380);
-        $('#isol').width(439.4);
-    }else{
-    	$('#displayBox').width(w*0.4);
-        // $('#displayBox').height(h*0.4);
+    $('#isol').width($('#isol').height());
+    var bt = (h - $('#isol').height()) / 2;
+    var oof = $('#isol').height() * 0.2;
+    $('#isol').css('top', bt);
+    $('#displayBox').css('top', (bt*0.8108) + 'px');
+    var bl = $('#isol').css('left');
+    if (bl == '0px')
+        bl = '28%';
+    if (bl.search('%') != -1) {
+        bl = bl.substring(0, bl.length - 1);
+        bl = (bl * w) / 100;
     }
-	var bt=(h-$('#isol').height())/2;
-	var oof=$('#isol').height();
-	$('#isol').css('top',bt);
-	$('#displayBox').css('top',(bt)+'px');
-	var bl=$('#isol').css('left');
-	if(bl=='0px')
-	bl='25%';
-	if(bl.search('%')!=-1){
-		bl=bl.substring(0,bl.length-1);
-		bl=(bl*w)/100;
-	}
-	var dl=bl+$('#isol').width()*0.60;
-	$('#displayBox').css('left',dl+'px');
-	var centreoffset= (w-(dl+$('#displayBox').width()-bl))/2;
-	$('#isol').css('left',centreoffset+'px');
-	$('#displayBox').css('left',centreoffset+$('#isol').width()*0.65+'px');
-	$('#displayBox p').height(250);
-	$('#re,#arch,#pro,#pcd').click(function(e){
-		$('.dgPoints').addClass('dPoints').removeClass('dgPoints');
+    var dl = bl + $('#isol').width();
+    //$('#displayBox').css('left', dl + 'px');
+    var centreoffset = (w - (dl + $('#displayBox').width() - bl)) / 2;
+    $('#isol').css('left', centreoffset + 'px');
+    $('#displayBox').css('left', (centreoffset + $('#isol').width() * 1.2) * 0.9697 + 'px');
+    $('#displayBox .mainDisplayContent p.paraContent').height(248);
+*/
+	$('#isol .dPoints').click(function(e){
+		$('#displayBox .icon').attr("src","");
+		$('.dgPoints').removeClass('dgPoints');
 		if(!$(e.currentTarget).hasClass('nerve'))
-		$(e.currentTarget).removeClass('dPoints').addClass('dgPoints');	
-		if(e.currentTarget.id=="re"){
-			$('#displayBox #title').html('RESEARCH');
-			$('#displayBox p').hide();
-			$('#displayBox p').html('<b>Equality:</b> We level the gap of un-equality in society through technology derivatives.<br><b>Reliability:</b> Prescriptive and predictive dimensioning which stands the test of time and space.<br><b>Inclusive:</b>  Knowledge of Normal and Knowledge of Para-Normal amalgamated to produce usability and utility.<br>').fadeIn();
-		}
-		else if(e.currentTarget.id=="arch"){
-			$('#displayBox #title').html('PRODUCT RE ENGINEERING');
-			$('#displayBox p').hide();
-			$('#displayBox p').html('<ul><li>We analyse the existing product features and gaps</li><li>We Identify & qualify the underpinning technology that forms the building block</li><li>We alternate with more efficient, effective and economical tools and techniques to reengineer the product</li></ul><br>Product Type:<ul><li>Consumer Passive Products</li><li>Electronics Active Products : Integrated Computing device, Solution on Chips , Embedded Software Industries ranging from Telecom to Packaging</li><li>Business Products (Business and Operational software and hardware based solutions.)</li></ul><br>').fadeIn();
-		}
-		else if(e.currentTarget.id=="pro"){
-			$('#displayBox #title').html('PROCESS DESIGN');
-			$('#displayBox p').hide();
-			$('#displayBox p').html('<ul><li>User interaction Model</li><li>Service Design</li><li>Technology Solution Design</li><li>Value Chain Design</li></ul>').fadeIn();
-		}
-		else if(e.currentTarget.id=="pcd"){
-			$('#displayBox #title').html('NEW BUSINESS DESIGN');
-			$('#displayBox p').hide();
-			$('#displayBox p').html('<ul><li>Waste-to-Wealth Design</li><li>Transformation and change Design</li></ul><br><span>We study your Business and Operational process, we pick up the cost center and suggest which can be converted to profit center, and we also identify the market through primary and secondary research.</span><br>').fadeIn();
+		$(e.currentTarget).addClass('dgPoints');	
+		for (var key in products){
+				if(products[key].type==e.currentTarget.id){
+					$('#displayBox #title label').html(products[key].title);
+					$('#displayBox .icon').attr("src",products[key].image);
+					$('#displayBox .mainDisplayContent p.paraContent').html(products[key].text).fadeIn();
+				}
 		}
 		$('#displayBox').data('current',e.currentTarget.id);
 	});
-	$('#arch').trigger('click');
+	$('#prod1').trigger('click');
 	setTimeout(function(){
 		$('#rightHand').animate({'marginRight':'-'+m+'%'},1500);
 		$('#leftHand').animate({'marginLeft':'-'+m+'%'},1500,function(){
@@ -85,28 +70,54 @@ $(function() {
 	},function(){
 		$('.menutxt:not(#menutxt3)').fadeTo('fast','0.6');
 	});
-		$('#nl').click(function(){
+	
+	$('#nl').click(function(){
 		anim(-1);
 	});
 	$('#nr').click(function(){
 		anim(1);
 	});
-	$('#displayBox p').slimScroll({
+	$('#displayBox .mainDisplayContent').slimScroll({
         height: '250px'
     });
-
+	
+	$('#displayBox .zoomCtrl').height($('#displayBox img.icon').height());
+	$('#displayBox .zoomCtrl').width($('#displayBox img.icon').width());
+	$('#displayBox .zoomCtrl').css('top',$('#displayBox .img.icon').css('top')-4);
+	var zoomCtrlWidth = $('#displayBox').width() - $('#displayBox .imageContent div.zoomCtrl').width();
+	var imgPagRight = $('#displayBox .imageContent').css('padding-right');
+	    zoomCtrlWidth = zoomCtrlWidth - imgPagRight.substr(0,imgPagRight.indexOf("p"));
+	$('#displayBox .imageContent div.zoomCtrl').css('left',zoomCtrlWidth);
+	$('#displayBox .imageContent div.zoomCtrl').css('top',20);
+	//For Hovering of the Content
+	$('#displayBox .imageContent img').mouseover(function(){
+		$(this).parent().find("div.zoomCtrl").show();
+	});
+	$('#displayBox .imageContent .zoomCtrl').mouseleave(function(){
+		$(this).parent().find("div.zoomCtrl").hide();
+	});
+	$('#popUp').cosyModal();
+	$('#displayBox .zoomCtrl').click(function(){
+		$('#popUp h1').html($('#displayBox #title label').html());
+		$('#popUp img').attr("src",$('#displayBox .icon').attr("src"));
+		$('#popUp p').html($('#displayBox .mainDisplayContent p.paraContent').html());
+		$('#popUp').cosyModal();
+		$('#popUp').width("80%")//.height("80%");
+		$('#popUp').cosyModal('show');
+	});
 });
 
 $(window).resize(function() {
   $('body').css('overflow-x','scroll');
   $('body').css('overflow-y','scroll');
 });
+
 function anim(nav){
 	if(nav==1){
 	if($('.dgPoints').next().hasClass('dPoints'))
 	$('.dgPoints').next().trigger('click');
 	else
-	$('#arch').trigger('click');
+	$('#prod1').trigger('click');
 	}
 	else if(nav==-1){
 		if($('.dgPoints').prev().hasClass('dPoints'))
@@ -115,3 +126,16 @@ function anim(nav){
 	$('#pcd').trigger('click');
 	}
 }
+
+var products = [
+//		TYPE 1
+		{"type": "prod1",
+        "title": "360&deg; IoT Corroborative Broker&#8482;",
+        "image": "images/products/cube.png",
+        "text": "<ul> <li>Cloud based Software defined Self Organizing session Broker </li> <li>Adaptive Routing </li> <li>Network agnostic to attain QoS</li> <li>Device agnostic</li> <li>Intertwine of structured and non structured data from various data source</li> <li>IoT generated transaction, presentation and end point data  for real time collaboration to actionable intelligence.</li> <li>Enables auto provisioning, insertion and extraction of data event based.</li> </ul> <br/><q style='color: rgb(255, 102, 0);'>This proprietary technology is being developed for To be launched BCausE  TeleHealth Business solution....</q> <br/> To know & partner get in touch with us. "}
+//		TYPE 2
+		,{"type": "prod2",
+        "title": "PoD&#8482; : Platform on  device",
+        "image": "images/products/device.png",
+        "text": "<ul> <li>An integrated multi sensory device</li> <li>Embedded software and hardware based product</li> <li>Wireless secure communication through MANET</li> <li>Stream and spool data from and to authenticated device</li> </ul><br/><q style='color: rgb(255, 102, 0);'>This proprietary technology is being developed for To be launched BCausE  TeleHealth Business solution....</q> <br/>To know & partner get in touch with us."}
+		];

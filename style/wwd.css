@@ -147,7 +147,7 @@ z-index:6;
 	height: 45%;
 	left: 25%;
 	top: 25%;
-	background: url('../images/wwd.png') no-repeat;
+	background: url('../images/atom.png') no-repeat;
 	background-size: 100% 100%;
 	display: none;
 }
@@ -157,12 +157,13 @@ z-index:6;
 	top: 25%;
 	left: 30%;
 	border-radius: 10px;
-	width: 450px;
+	width: 27%;
 	background: #b4c1d3;
 	opacity: 0.8;
 	color: #093257;
-	height: 300px;
+	height: 350px;
 	display: none;
+	z-index: 6;
 }
 
 #iso{
@@ -174,31 +175,152 @@ z-index:6;
 	top: 8%;
 	right: 10%;
 }
-#arch{
-	top: 40%;
-	right: 25%;
+#prod1{
+	top: 5%;
+	right: -12%;
 }
 #pcd span{
 	padding: 0 15px 0 5px;
 }
-#pro{
-	bottom: 25%;
-	right: 10%;
+#prod2{
+	bottom: 47%;
+	right: 14%;
 }
 #pcd{
 	top: 15%;
 }
+.chead label{
+	font-family: myraid,'Myriad Pro',sans-serif;
+	display: inline-block;
+	height: 1.5em;
+	font-size: 1.15em;
+}
 #displayBox #title{
 	background: #ede8e8;
 	opacity:0.95;
-	border-radius: 5px;
+	border-radius: 10px;
 	color: #ff6600;
 	font-family: myraid,'Myriad Pro',sans-serif;
 	font-style: normal;
 	font-size: 1.2em;
 	padding: 2% 0 1% 1%;
 	text-align: center;
+	width: 99%;
 }
-#displayBox p{
-	padding: 2% 2% 0 35%;
+#displayBox .mainDisplayContent p.paraContent{
+	padding: 2% 2% 0 10%;
+	overflow: visible !important;
+}
+#displayBox .imageContent .icon:hover{
+	box-shadow: 0 0 7px #000;
+}
+#displayBox div.zoomCtrl{
+	background: url("../images/zoom-in-text.png") no-repeat scroll 50% 54% #000;
+	color: #fff;
+	opacity:0.65;
+	position: absolute;
+    left: 269px;
+    top: 20px;
+}
+#displayBox img.icon {
+    height: 80px;
+	width: 80px;
+}
+#displayBox .imageContent {
+	float: right;
+    height: 80px;
+	width: 80px;
+	padding: 20px 20px 10px;
+}    
+#popUp > img {
+    float: left;
+    width: 350px;
+	padding: 40px 20px 20px 10px;
+}
+#popUp > p {
+    overflow: visible;
+    padding: 40px 0px 20px 396px;
+	font-size: 18px;
+}
+
+.cosyModal h1 {
+    background: url("../images/header.png") repeat scroll 0 0 / auto 100% rgba(0, 0, 0, 0);
+}
+#isol{
+		height: 43.07%;
+		width: 20.5%;
+		left: 26.24%;
+		top: 28.4%;
+}
+#displayBox{
+		left: 49.3%;
+		top: 23.07%;
+}
+@media (min-width: 800px) and (max-width: 1024px){
+	#isol{
+		height: 29%;
+		width: 21%;
+		left: 12%;
+		top: 48%;
+		font-size: 10pt;
+	}
+	#displayBox{
+		height: 55%;
+		width: 24%;
+		left: 36%;
+		top: 28%;
+		font-size:11pt;
+	}
+}
+@media (min-width: 1020px) and (max-width: 1249px){
+	#isol{
+		left: 25%;
+		top: 36%;
+	}
+	#displayBox{
+		left: 48.3%;
+		top: 23.07%;
+	}
+}
+@media (min-width: 1250px) and (max-width: 1299px){
+	#isol{
+		height: 33.07%;
+		width: 21.5%;
+		left: 24.24%;
+		top: 28.4%;
+	}
+	#displayBox{
+		left: 48.3%;
+		top: 23.07%;
+	}
+}
+@media (min-width: 1300px){
+	#isol{
+		height: 43.07%;
+		width: 20.5%;
+		left: 26.24%;
+		top: 28.4%;
+	}
+	#displayBox{
+		left: 49.3%;
+		top: 23.07%;
+	}
+}
+@media (min-width: 1600px){
+	#isol{
+		height: 36.07%;
+		width: 20.5%;
+		left: 21.24%;
+		top: 28.4%;
+	}
+	#displayBox{
+		left: 49.3%;
+		top: 23.07%;
+	}
+	#prod2 {
+		right: 28%;
+	}
+	#prod1 {
+		right: 0%;
+	}
 }

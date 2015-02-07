@@ -249,4 +249,4 @@ padding-left: 5px;
 #nl:active,#nr:active{
 	background:url('../images/navc.jpg');
 	background-size:100% 100%;
-}
+}@media (max-width: 800px){	.heading ,#footer {		width:77%;	}	#bcauselogo {		right: 16.5%;	}}@media (min-width: 800px) and (max-width: 1024px){	#leftHand{		height: 50%;	}	#rightHand{		height: 50%;		right: 22%;	}	.menutxt{		font-size:11pt;	}}@media (width: 1024px){	#leftHand,#rightHand{		top: 30%;	}	#bcauselogo {		right: -5%;	}}@media (min-width: 1020px) and (max-width: 1249px){	#rightHand{		right: 0%;	}	.menutxt{		font-size:13pt;	}}@media (min-width: 1250px) and (max-width: 1299px){}@media (min-width: 1300px){	}

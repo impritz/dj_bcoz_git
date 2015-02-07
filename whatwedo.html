@@ -6,9 +6,11 @@
 <link rel="stylesheet" type="text/css" href="style/reset.css">
 <link rel="stylesheet" type="text/css" href="style/common.css">
 <link rel="stylesheet" type="text/css" href="style/wwd.css">
+<link rel="stylesheet" type="text/css" media="all" href="style/jquery.cosyModal.css" />
 <script type="text/javascript" src="js/modernizr.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.cosyModal.js"></script>
 
 <!--[if lt IE 9]>
 <link rel="stylesheet" type="text/css" href="style/ie8.css">
@@ -27,7 +29,7 @@
   <div class = "menub" id = "menu3" onClick="javascript:onMenuClick(this)"></div>
   <div class = "menutxt" id = "menutxt1">WHERE WE COME FROM</div>
   <div class = "menutxt" id = "menutxt2">WHO WE ARE</div>
-    <div class = "menutxt" id = "menutxt3">WHAT WE DO</div>
+    <div class = "menutxt" id = "menutxt3">TECHNOLOGY</div>
     <div class="nerve" id="analysis"><span>Analysis</span></div>
     <div class="nerve" id="compu"><span>Computation</span></div>
     <div class="nerve" id="is"><span>Integrated Solution</span></div>
@@ -39,20 +41,32 @@
   <div class = "menub" id = "menu6" onClick="javascript:onMenuClick(this)"></div>
   <div class = "menutxt" id = "menutxt5">CONNECT</div>
     <div class = "menutxt" id = "menutxt6">THOUGHTS @<br>BCAUSE</div>
-    <div class = "menutxt" id = "menutxt4">INNOVATION FOCUS<br>AREA</div>
+    <div class = "menutxt" id = "menutxt4">APPROACH @<br>BCAUSE</div>
 </div>
-  <div id="displayBox">
-  <div id="title">Title</div>
-  <p>Content</p>
-  <div id="nl"></div>
-  <div id="nr"></div>
+<div id="displayBox">
+  <div id="title" class="chead"><label>Title</label></div>
+  <div class="mainDisplayContent">
+	<div class="imageContent">
+	  <div class="zoomCtrl" style="display:none;"></div>
+      <img class="icon" src="">
+	</div>
+	  <p class="paraContent">Content</p>
   </div>
-  <div id="isol">
+  <div id="cont">
+	<div id="bk"></div><div id="nl"></div><div id="nr"></div>
+  </div>
+  <div id="popUp">
+	<h1></h1>
+	<img src="">
+	<p></p>
+  </div>
+</div>
+<div id="isol">
   <!-- <div class="dPoints" id="re"><label></label><span>RESEARCH</span></div> -->
-  <div class="dPoints" id="arch"><label></label><span>PRODUCT RE ENGINEERING</span></div>
-  <div class="dPoints" id="pro"><label></label><span>PROCESS DESIGN</span></div>
-  <div class="dPoints" id="pcd"><span>NEW BUSINESS DESIGN</span><label></label></div>
-  </div>
+  <div class="dPoints" id="prod1"><label></label><span>360&deg; IoT CORROBORATIVE BROKER&#8482;</span></div>
+  <div class="dPoints" id="prod2"><label></label><span>PoD&#8482; : PLATFORM ON  DEVICE</span></div>
+  <!--<div class="dPoints" id="pcd"><span>NEW BUSINESS DESIGN</span><label></label></div> -->
+</div>
 <div id="footer"><div id="copyright">&copy; Copyrights  <a href="index.html">home</a></div>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/wwd.js"></script>

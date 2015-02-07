@@ -196,3 +196,57 @@ ul.reset li {
 ul.reset li {
     position:absolute;
 }
+#imageContent{
+	padding: 6% 0;
+	text-align: center;
+}
+#imageContent > img{
+	padding: 2% 0;
+    width: 35%;
+}
+#imageContent > p.lower{
+	padding: 0 32%;
+}
+#popUp {
+	text-align: center;
+	font-size: 15pt;
+}
+#popUp > img{
+    width: 80%;
+}
+#popUp > p{
+	padding: 1% 0%;
+}
+#popUp > p.lower{
+	padding: 1% 5%;
+}
+.cosyModal h1 {
+    background: url("../images/header.png") repeat scroll 0 0 / auto 100% rgba(0, 0, 0, 0);
+}
+#imageContent div.zoomCtrl{
+	background: url("../images/zoom-in-text.png") no-repeat scroll 50% 54% / 28% 37% #000;
+	color: #fff;
+	opacity:0.65;
+	position: absolute;
+}
+@media (min-width: 800px) and (max-width: 1023px){
+	#imageContent {
+		font-size: 9pt;
+		width: 83%;
+		padding: 11% 0;
+	}
+}
+@media (min-width: 1020px) and (max-width: 1249px){
+	#imageContent{
+		padding: 13% 0;
+	}	
+}
+@media (min-width: 1250px) and (max-width: 1299px){
+	#imageContent{
+		padding: 10% 0;
+	}	
+}
+@media (min-width: 1300px){
+}
+@media (min-width: 1600px){
+}
