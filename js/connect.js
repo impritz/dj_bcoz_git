@@ -1,5 +1,6 @@
 $(function() {
 	// var w=(window.innerWidth==null)?(document.documentElement.offsetWidth):window.innerWidth,h=(window.innerHeight==null)?(document.documentElement.offsetHeight):window.innerHeight;
+	/*//COMMENTING THE HEIGHT & WIDTH LOGIC
 	$('.nerve').width($('.nerve').height());
 	$('.cpnerve').width($('.cpnerve').height());
 	$('#menubutton').width($('#menubutton').height()).css('left',(w-$('#menubutton').width())/2);
@@ -45,9 +46,9 @@ $(function() {
 		$('#displayBox').css('top',bo+bt/2);
 		$('#displayBox').css('left',centreoffset+$('#brain').width()*0.6+'px');
 
-	}
+	}*/
 
-
+	/*//COMMENTING THE BUTTON CLICK LOGIC
 	$('#insight,#temprament,#foresight').click(function(e){
 		if(e.currentTarget.id=="temprament"){
 			return;
@@ -72,13 +73,38 @@ $(function() {
 		if(!$(e.currentTarget).hasClass('nerve'))
 		$(e.currentTarget).removeClass('bPoints').addClass('bgPoints');	
 		$('#displayBox').data('current',e.currentTarget.id);
-	});
+	});	
+		
 	$('#displayBox').on('click','#cont li',function(e){
 		$('.vp').removeClass('vp').hide();
 		$('#p'+e.currentTarget.id.split('l')[1]).fadeIn().addClass('vp');
 		$('li.sel').removeClass('sel');
 		$(e.currentTarget).addClass('sel');
-	})
+	})*/
+	
+	$('#displayBox .mainDisplayContent').slimScroll({
+        height: '250px'
+    });
+	
+	var jobList = "<ul>";
+		for (var key in jobs){
+			jobList += "<li><a href='javascript:;' code='"+jobs[key].code+"'>"+jobs[key].code+" - "+jobs[key].name+"</a></li>";
+		}
+		jobList += "</ul>";
+		$("#jobSection #jobList").html(jobList);
+	
+	$("#jobSection #jobList li a").click(function(){
+		for (var key in jobs){
+			if(jobs[key].code==$(this).attr('code')){
+				$('#popUp').cosyModal({width : '80%'});
+				$("#popUp h1").html(jobs[key].code+" - "+jobs[key].name);
+				$("#popUp a").attr('href',"mailto:hr@bcause.in?body=Please find my profile Attached&subject=Job Application | "+jobs[key].code+" | "+jobs[key].name);
+				$("#popUp p").html(jobs[key].text);
+				$('#popUp').cosyModal('show');
+			}
+		}
+	});
+	
 	$('.menutxt:not(#menutxt5)').hover(function(){
 		$(this).fadeTo('fast','1').css('color',"#093257");
 	},function () {
@@ -95,13 +121,11 @@ $(function() {
 	$('#nr').click(function(){
 		ani(1);
 	});
-	$('#insight').trigger('click');
+	//$('#insight').trigger('click');
 	setTimeout(function(){
 		$('#rightHand').animate({'marginRight':'-'+m+'%'},1500);
 		$('#leftHand').animate({'marginLeft':'-'+m+'%'},1500,function(){
-			$('#brain').fadeIn('slow',function(){
-				$('#displayBox').fadeIn();
-			});
+			$('#displayBox').fadeIn('slow');
 		});
 		$('.menutxt:not(#menutxt5)').fadeTo('2000','0.6');
 	},1000);
@@ -124,3 +148,14 @@ $(window).resize(function() {
   $('body').css('overflow-x','scroll');
   $('body').css('overflow-y','scroll');
 });
+
+var jobs = [
+//		JOB 1
+		{"name": "Principle Consultant :  Mathematical Statistics and  Dataset modeler",
+        "code": "PC -MD0115",
+        "text": "<p>RESPONSIBILITIES:</p> <ol> <li>Numerical Analysis through mathematical logics</li> <li>Natural Language Processing </li> <li>Theory of Computation & image processing algorithims </li> <li>Game theory and agent based modelling </li> <li>Computational logics to Mathematical models for self actuated data set generation.</li> <li>Knowledge of Concept Algebra, System Algebra, RealTime process Algebra</li> <li>Data Set Modeler to create conceptual data set to physical dataset using tools </li> <li>MATLAB /SAS/STATS or any other tool </li> <li>Python, R and porting in to noSqL database </li> </ol> <p>REQUIREMENTS:</p> <ol> <li>BE/Phd  Computational and statistical  Science and engineering , ISI </li> <li>Certification in Big Data or Machine learning will be an advantage </li> <li>2-4 years of experience </li> <li>Self starter, creative, investigative and inventive </li> </ol>"}
+//		JOB 2
+		,{"name": "Principal Consultant : Software Developer ",
+        "code": "PC -SD0215",
+        "text": "<p>RESPONSIBILITIES:</p> <ol> <li>Coding on Perl, Java ,JSON , C, C++  ,Python </li> <li>In depth understanding of XMPP Stack, REST API </li> <li>Backend real time database integration </li> <li>work on various Integrated development environment</li> <li>Wireless communication  protocol understanding</li> <li>Setup, optimise development environment </li> </ol> <p>Desired Skills & Experience<br/>REQUIREMENTS:</p> <ol> <li>BE Computer Sicence from reputed institute</li> <li>Good communication skills </li> <li>Minimum 4-5 years of experience </li> <li>Integration with various modules and components</li> </ol>"}
+		];

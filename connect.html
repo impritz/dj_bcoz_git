@@ -6,7 +6,11 @@
 <link rel="stylesheet" type="text/css" href="style/reset.css">
 <link rel="stylesheet" type="text/css" href="style/common.css">
 <link rel="stylesheet" type="text/css" href="style/connect.css">
+<link rel="stylesheet" type="text/css" media="all" href="style/jquery.cosyModal.css" />
 <script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.cosyModal.js"></script>
 <!--[if lt IE 9]>
 <link rel="stylesheet" type="text/css" href="style/ie8.css">
 <![endif]-->
@@ -29,28 +33,46 @@
 	<div class="menub" id="menu4" onClick="javascript:onMenuClick(this)"></div>
 	<div class="menub" id="menu5" onClick="javascript:onMenuClick(this)"></div>
 	<div class="menub" id="menu6" onClick="javascript:onMenuClick(this)"></div>
-	<div class = "menutxt" id = "menutxt5">CONNECT</div>
+	<div class = "menutxt" id = "menutxt5">CAREERS @<br>BCAUSE</div>
   	<div class = "menutxt" id = "menutxt6">THOUGHTS @<br>BCAUSE</div>
   	<div class = "menutxt" id = "menutxt4">APPROACH @<br>BCAUSE</div>
   	<div class="cpnerve" id="partnerp"><span>Partners</span></div>
     <div class="cpnerve" id="contactusp"><span>Contact</span></div>
     <div class="cpnerve" id="jobp"><span style="width: 150px;display: block;margin-left: -40px;">Job Opportunities</span></div>
 </div>
-<div id="displayBox">
-	<div id="title"><label>Title</label></div>
-	<p><img src="images/clogo.png">Content</p>
+<div id="displayBox" style="display:none;">
+	<div id="title"><label>Careers @BCause</label></div>
+	<div class="mainDisplayContent">
+		<p class="content">
+			<q>You will be one in the group of curious inventor, solver, executor, eliminator and experienced professionals,committed to implement and deploy a solution to solve a complex problem, where you and I have also contributed.<br/><br/>
+			We are looking for the Brain and the attitude to push the envelope, we will give you the heart and behavioural traits, and together this brain and behaviour will make you the righteous winner and us to build a home of winners. <br/><br/>
+			We thank you for taking interest, if you fit into the below profile, please send us your profile with the job code and a short covering letter – stating “ What you think BcausE will lose if you are not selected </q>.
+		</p>
+		<div id="jobSection">
+			<p class="jobHead">Current Openings</p>
+			<div id="jobList"></div>
+		</div>
+	</div>
+	<!--
 	<div id="nl"></div>
 	<div id="nr"></div>
-	</div>
+	-->
+</div>
+  <div id="popUp" style="display:none;">
+	<h1></h1>
+	<p class="popUpContent"></p>
+	<a href="#"><img src="images/apply-button.jpg"></a>
+  </div>
+<!--
 <div id="brain">
 	<div class="bPoints" id="insight"><label></label><span>CONTACT</span></div>
 	<div class="bPoints" id="temprament"><label></label><span>PARTNER</span></div>
 	<div class="bPoints" id="foresight"><span>JOB OPPORTUNTIES</span><label></label></div>
 </div>
+-->
 <div class = "menu menuUnPressed" id = "menubutton" ></div>
 <div id="footer"><div id="copyright">&copy; Copyrights  <a href="index.html">home</a></div>
 </div>
-<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/connect.js"></script>
 </body>

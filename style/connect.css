@@ -138,8 +138,9 @@ right: 22%;
 	font-family: myraid,'Myriad Pro',sans-serif;
 	position: absolute;
 	border-radius: 10px;
-	display: none;
-	width: 500px;
+	display: block;
+	width: 37%;
+	left: 33%;
 	top: 20%;
 	background: #b4c1d3;
 	opacity: 0.8;
@@ -161,8 +162,8 @@ right: 22%;
 #displayBox #title label{
 	position: relative;
 }
-#displayBox p{
-	padding: 2% 2% 0 35%;
+#displayBox p.content{
+	padding: 2% 2% 0 2%;
 	overflow: visible;
 }
 #displayBox img{
@@ -305,4 +306,56 @@ right: 22%;
 }
 #cont ul{
 	text-align: center;
+}
+#jobSection p.jobHead{
+	font-weight: bold;
+	padding: 2%;
+    text-align: center;
+}
+#jobSection  #jobList{
+	line-height: 1.3;
+    padding: 0% 6%;
+}
+#jobSection  #jobList li {
+    padding: 1% 2%;
+}
+#jobSection  #jobList p{
+	font-weight: bold;
+}
+#popUp {
+	font-size: 13pt;
+}
+#popUp  p.popUpContent{
+    padding: 0 2%;
+}
+#popUp p.popUpContent p{
+	font-weight: bold;
+	padding: 2% 0%;
+}
+#popUp img{
+	position: absolute;
+    right: 10%;
+    top: 47%;
+    width: 18%;
+}
+@media (min-width: 800px) and (max-width: 1023px){
+	#displayBox {
+		left: 24%;
+		width: 35%;
+		font-size: 11pt;
+	}
+	#popUp img {
+		top: 17%;
+	}
+}
+@media (min-width: 1020px) and (max-width: 1249px){
+	#popUp img {
+		top: 17%;
+	}
+}
+@media (min-width: 1250px) and (max-width: 1299px){
+}
+@media (min-width: 1300px){
+}
+@media (min-width: 1600px){
 }
