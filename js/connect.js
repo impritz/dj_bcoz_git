@@ -82,27 +82,59 @@ $(function() {
 		$(e.currentTarget).addClass('sel');
 	})*/
 	
-	$('#displayBox .mainDisplayContent').slimScroll({
-        height: '250px'
-    });
+	slimScr('.carrersDisplayContent p.content');
 	
-	var jobList = "<ul>";
-		for (var key in jobs){
-			jobList += "<li><a href='javascript:;' code='"+jobs[key].code+"'>"+jobs[key].code+" - "+jobs[key].name+"</a></li>";
+	$('#profTitle').click(function(){
+		$('.carrersDisplayContent').hide();
+		$('#displayBox #title label').html($(this).find('label').html());
+		
+		var jobList = "";
+		for (var key in profJobs){
+			if(profJobs[key].type == $(this).attr('data')){
+			   jobList += "<li><a href='javascript:;' data='"+profJobs[key].type+"' code='"+profJobs[key].code+"'>"+profJobs[key].code+" - "+profJobs[key].name+"</a></li>";
+			}/*else if(profJobs[key].type == $(this).attr('data') &&
+					 profJobs[key].intro != ""){
+					 jobList += profJobs[key].intro;
+					 jobList += "<p style='text-align:center;'><br/><a href='javascript:;' data='"+profJobs[key].type+"' code='"+profJobs[key].code+"'>"+profJobs[key].name+"</a></p>";
+			 }*/
 		}
-		jobList += "</ul>";
-		$("#jobSection #jobList").html(jobList);
+		jobList = "<ul>"+jobList+"</ul>";
+		$("#jobSection #jobList").html(jobList+"<br/><br/>");
+		$('#popUpImage').attr('src','images/careers_'+$(this).attr('data')+'.jpg')
 	
-	$("#jobSection #jobList li a").click(function(){
-		for (var key in jobs){
-			if(jobs[key].code==$(this).attr('code')){
-				$('#popUp').cosyModal({width : '80%'});
-				$("#popUp h1").html(jobs[key].code+" - "+jobs[key].name);
-				$("#popUp a").attr('href',"mailto:hr@bcause.in?body=Please find my profile Attached&subject=Job Application | "+jobs[key].code+" | "+jobs[key].name);
-				$("#popUp p").html(jobs[key].text);
-				$('#popUp').cosyModal('show');
+		$("#jobSection #jobList a").click(function(){
+			for (var key in profJobs){
+				if(profJobs[key].type==$(this).attr('data') &&
+				   profJobs[key].code==$(this).attr('code')){
+					$('#popUp').cosyModal({width : '80%'});
+					$("#popUp h1").html(profJobs[key].code+" - "+profJobs[key].name);
+					$("#popUp a").attr('href',"mailto:hr@bcause.in?body=What you think BcausE will lose if you are not selected%3F&subject=Job Application | "+profJobs[key].code+" | "+profJobs[key].name);
+					$("#popUp p.popUpContent").html(profJobs[key].text);
+					$('#popUp').cosyModal('show');
+				}
 			}
+		});
+		slimScr("#jobSection #jobList");
+		$('#displayBox').fadeIn();
+	});
+	
+	$('#stuTitle').click(function(){
+		$('.carrersDisplayContent').hide();
+		$('#displayBox #title label').html($(this).find('label').html());
+		
+		var jobList = "";
+		for (var key in stuJobs){
+		   jobList += "<li><a href='mailto:hr@bcause.in?body=What you think BcausE will lose if you are not selected%3F&subject=Job Application | "+stuJobs[key].name+"'>"+stuJobs[key].name+"</a></li>";
 		}
+		jobList = "<ol>"+jobList+"</ol>";
+		$("#jobSection #jobList").html($("#stuIntro").html()+jobList+"<br/><br/>");
+		slimScr("#jobSection #jobList");
+		$('#displayBox').fadeIn();
+	});
+	
+	$('#nl').click(function(){
+		$('#displayBox').hide();
+		$('.carrersDisplayContent').fadeIn();
 	});
 	
 	$('.menutxt:not(#menutxt5)').hover(function(){
@@ -125,11 +157,26 @@ $(function() {
 	setTimeout(function(){
 		$('#rightHand').animate({'marginRight':'-'+m+'%'},1500);
 		$('#leftHand').animate({'marginLeft':'-'+m+'%'},1500,function(){
-			$('#displayBox').fadeIn('slow');
+			$('.carrersDisplayContent').fadeIn('slow');
+			$('.slimScrollDiv').css('overflow','');
 		});
 		$('.menutxt:not(#menutxt5)').fadeTo('2000','0.6');
 	},1000);
 });
+
+function slimScr(selector){
+	var hVar = '238px';
+	if(w<1250){
+		hVar = '238px';
+	}else{
+		hVar = '315px';
+	}
+	$(selector).slimScroll({
+			height: hVar
+		});
+	
+}
+
 function ani(nav){
 	if(nav==1){
 	if($('.bgPoints').next().hasClass('bPoints'))
@@ -149,13 +196,27 @@ $(window).resize(function() {
   $('body').css('overflow-y','scroll');
 });
 
-var jobs = [
-//		JOB 1
+var profJobs = [
+//		PRO - JOB 1
 		{"name": "Principle Consultant :  Mathematical Statistics and  Dataset modeler",
         "code": "PC -MD0115",
+		"type":"professional",
         "text": "<p>RESPONSIBILITIES:</p> <ol> <li>Numerical Analysis through mathematical logics</li> <li>Natural Language Processing </li> <li>Theory of Computation & image processing algorithims </li> <li>Game theory and agent based modelling </li> <li>Computational logics to Mathematical models for self actuated data set generation.</li> <li>Knowledge of Concept Algebra, System Algebra, RealTime process Algebra</li> <li>Data Set Modeler to create conceptual data set to physical dataset using tools </li> <li>MATLAB /SAS/STATS or any other tool </li> <li>Python, R and porting in to noSqL database </li> </ol> <p>REQUIREMENTS:</p> <ol> <li>BE/Phd  Computational and statistical  Science and engineering , ISI </li> <li>Certification in Big Data or Machine learning will be an advantage </li> <li>2-4 years of experience </li> <li>Self starter, creative, investigative and inventive </li> </ol>"}
-//		JOB 2
+//		PRO - JOB 2
 		,{"name": "Principal Consultant : Software Developer ",
         "code": "PC -SD0215",
+		"type":"professional",
         "text": "<p>RESPONSIBILITIES:</p> <ol> <li>Coding on Perl, Java ,JSON , C, C++  ,Python </li> <li>In depth understanding of XMPP Stack, REST API </li> <li>Backend real time database integration </li> <li>work on various Integrated development environment</li> <li>Wireless communication  protocol understanding</li> <li>Setup, optimise development environment </li> </ol> <p>Desired Skills & Experience<br/>REQUIREMENTS:</p> <ol> <li>BE Computer Sicence from reputed institute</li> <li>Good communication skills </li> <li>Minimum 4-5 years of experience </li> <li>Integration with various modules and components</li> </ol>"}
+//		PRO - JOB 3
+		,{"name": "Executive  :  Platform Engineer  Qty 2 No.",
+        "code": "E -PE0215",
+		"type":"professional",
+        "text": "<p>RESPONSIBILITIES:</p> <ol><li>Installation and integration of Domain and Application Server </li> <li>Proficient in Windows and Linux enterprise server version</li> <li>VLAN and LAN networking and IP addressing schema and managment </li> <li>AAA server and session engineering and dimensioning </li> <li>Virtualisation , DNS, DHCP, Forest Domain </li> <li>Shell scripting </li> <li>LDAP , Kerberos and CA implementation</li> <li>Version control, Data backup, Server Performance monitoring</li></ol> <p>REQUIREMENTS:</p> <ol><li>BE Computer Science </li> <li>Certification in RH Linux Enterprise server  will be added advantage </li> <li>In depth understanding of Linux Kernel</li> <li>Docker and Container framework and integration </li> <li>2 - 5 years of experience </li> </ol>"}
+		];
+var stuJobs = [
+		{"name": "Anthropology Designer -  technology Product Usability and instantiation specification"}
+		,{"name": "Corporate Accounting  - R&D driven Technology Company"}
+		,{"name": "Psychometric Analyst"}
+		,{"name": "Programmer - Full Stack Open source Enthusiast  In Firmware and Cloud Computing"}
+		,{"name": "Telecom Engineer -  Any of IMS Protocol Stack component  development or Integration"}
 		];

@@ -139,8 +139,8 @@ right: 22%;
 	position: absolute;
 	border-radius: 10px;
 	display: block;
-	width: 37%;
-	left: 33%;
+	width: 43%;
+	left: 30%;
 	top: 20%;
 	background: #b4c1d3;
 	opacity: 0.8;
@@ -148,7 +148,7 @@ right: 22%;
 	min-height: 300px;
 	padding-bottom: 20px;
 }
-#displayBox #title{
+#displayBox #title,.carrersDisplayContent #stuTitle,.carrersDisplayContent #profTitle{
 	background: #ede8e8;
 	opacity:0.95;
 	border-radius: 5px;
@@ -165,11 +165,6 @@ right: 22%;
 #displayBox p.content{
 	padding: 2% 2% 0 2%;
 	overflow: visible;
-}
-#displayBox img{
-	height: 80px;
-	padding: 5px;
-	float: right;
 }
 #cl,#cr{
 	position: absolute;
@@ -307,55 +302,108 @@ right: 22%;
 #cont ul{
 	text-align: center;
 }
-#jobSection p.jobHead{
+.carrersDisplayContent{
+	left: 30%;
+    position: absolute;
+    top: 20%;
+	width: 43%;
+}
+.carrersDisplayContent img.careersBkgrnd{
+	float: left;
+	width: 100%;
+	height: 100%;
+	opacity: 0.35;
+}
+.carrersDisplayContent p{
 	font-weight: bold;
-	padding: 2%;
-    text-align: center;
+    padding-right: 6%;
+    position: absolute;
+    text-align: justify;
+}
+.carrersDisplayContent #stuTitle{
+	left: 41%;
+    padding: 1%;
+    position: absolute;
+    top: 82%;
+    width: 55%;
+}
+.carrersDisplayContent #profTitle{
+	left: 2%;
+    padding: 1%;
+    position: absolute;
+    top: 82%;
+    width: 35%;
+}
+#stuTitle, #stuTitle label, #profTitle, #profTitle label{
+	cursor: pointer;
+}
+#nl{
+	left: 5%;
 }
 #jobSection  #jobList{
 	line-height: 1.3;
-    padding: 0% 6%;
+    padding: 3% 6%;
+	text-align: justify;
 }
 #jobSection  #jobList li {
     padding: 1% 2%;
 }
-#jobSection  #jobList p{
-	font-weight: bold;
+.carrersDisplayContent .slimScrollDiv{
+	padding: 6% 6% 0% 6%;
 }
 #popUp {
 	font-size: 13pt;
 }
+#popUpImage{
+	opacity: 0.35;
+    position: absolute;
+    width: 98%;
+	height: 98%;
+    z-index: -2;
+}
 #popUp  p.popUpContent{
-    padding: 0 2%;
+    padding: 0 28% 0 3%;
 }
 #popUp p.popUpContent p{
 	font-weight: bold;
 	padding: 2% 0%;
 }
-#popUp img{
+#popUp #apply{
 	position: absolute;
     right: 10%;
     top: 47%;
     width: 18%;
+	text-align: center;
+}
+#popUp img#applyImg{
+    width: 100%;
+}
+#popUp .imgText{
+	color: #2e5793;
+    font-weight: bold;
 }
 @media (min-width: 800px) and (max-width: 1023px){
-	#displayBox {
+	.carrersDisplayContent ,#displayBox{
 		left: 24%;
 		width: 35%;
+		height: 55%;
 		font-size: 11pt;
-	}
-	#popUp img {
-		top: 17%;
 	}
 }
 @media (min-width: 1020px) and (max-width: 1249px){
-	#popUp img {
-		top: 17%;
+	.carrersDisplayContent ,#displayBox{
+		height: 46%;
 	}
 }
 @media (min-width: 1250px) and (max-width: 1299px){
 }
 @media (min-width: 1300px){
+	.carrersDisplayContent #stuTitle{
+		top: 89%;
+	}
+	.carrersDisplayContent #profTitle{
+		top: 89%;
+	}
 }
 @media (min-width: 1600px){
 }
