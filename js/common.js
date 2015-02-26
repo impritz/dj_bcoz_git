@@ -103,6 +103,9 @@ function onMenuClick(obj) {
         case 6:
             window.open("thoughts.html", '_blank').focus();
             break;
+		case 7:
+            window.location.href = "contact.html";
+            break;
         default:
             console.log("Invalid Click");
     }

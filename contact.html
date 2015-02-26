@@ -5,8 +5,12 @@
 <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 <link rel="stylesheet" type="text/css" href="style/reset.css">
 <link rel="stylesheet" type="text/css" href="style/common.css">
-<link rel="stylesheet" type="text/css" href="style/wdwcf.css">
+<link rel="stylesheet" type="text/css" href="style/contact.css">
+<link rel="stylesheet" type="text/css" media="all" href="style/jquery.cosyModal.css" />
 <script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.cosyModal.js"></script>
 <!--[if lt IE 9]>
 <link rel="stylesheet" type="text/css" href="style/ie8.css">
 <![endif]-->
@@ -17,20 +21,15 @@
 </div>
 <div id="bcauselogo"><img src="images/logo.png" id="blogo"></div>
 <div id="leftHand">
-<div id="wwnerve"></div>
 	<div class="menub" id="menu1" onClick="javascript:onMenuClick(this)"></div>
 	<div class="menub" id="menu2" onClick="javascript:onMenuClick(this)"></div>
 	<div class="menub" id="menu3" onClick="javascript:onMenuClick(this)"></div>
-	<div class="nerve" id="hs"><span>Highsight</span></div>
-	<div class="nerve" id="fs"><span>Foresight</span></div>
-	<div class="nerve" id="is"><span>Insight</span></div>
-	<div class="nerve" id="tem"><span>Temprament</span></div>
-	<div class="nerve" id="val"><span>Value</span></div>
 	<div class = "menutxt" id = "menutxt1">WHERE WE COME FROM</div>
 	<div class = "menutxt" id = "menutxt2">WHO WE ARE</div>
   	<div class = "menutxt" id = "menutxt3">TECHNOLOGY</div>
 </div>
 <div id="rightHand">
+  	<div id="contactnerve"></div>
 	<div class="menub" id="menu4" onClick="javascript:onMenuClick(this)"></div>
 	<div class="menub" id="menu5" onClick="javascript:onMenuClick(this)"></div>
 	<div class="menub" id="menu6" onClick="javascript:onMenuClick(this)"></div>
@@ -39,25 +38,38 @@
   	<div class = "menutxt" id = "menutxt6">THOUGHTS @<br>BCAUSE</div>
   	<div class = "menutxt" id = "menutxt4">APPROACH @<br>BCAUSE</div>
 	<div class = "menutxt" id = "menutxt7">CONTACT @<br>BCAUSE</div>
+  	<div class="cpnerve" id="partnerp"><span>Partners</span></div>
+    <div class="cpnerve" id="contactusp"><span>Contact</span></div>
+    <div class="cpnerve" id="jobp"><span style="width: 150px;display: block;margin-left: -40px;">Job Opportunities</span></div>
 </div>
-<div id="displayBox">
-	<div id="title"><label>Title</label></div>
-	<p>Content</p>
-	<div id="nl"></div>
-	<div id="nr"></div>
-	</div>
-<div id="brain">
-	<div class="bPoints" id="insight"><label></label><span>INSIGHT</span></div>
-	<div class="bPoints" id="temprament"><label></label><span>TEMPRAMENT</span></div>
-	<div class="bPoints" id="foresight"><label></label><span>FORESIGHT</span></div>
-	<div class="bPoints" id="value"><label></label><span>VALUE</span></div>
-	<div class="bPoints" id="highsight"><label></label><span>HINDSIGHT</span></div> 
+
+<div class="carrersDisplayContent" style="display:none;">
+	<img class="careersBkgrnd" src="images/contact_us.jpg"/>
+	<p class="content">
+		<div id="contdiv">
+			<p>
+				<b>Contact Us:</b><br>
+				Email: <a href="mailto:contact@bcause.in">contact@bcause.in</a><br>
+				Ph No: +91 (0120) 4333750<br/>
+				<br/>
+				<b>Regd. Address</b><br/>
+				B-5, Sector 34, NOIDA<br>
+				Uttar Pradesh- 201301<br>
+				India
+			</p>
+		</div>
+		<div id="socialDsiv">
+			<p>
+				<b>Follow Us: </b><a target="_blank" href="https://www.linkedin.com/company/3199967?trk=vsrp_companies_res_name&trkInfo=VSRPsearchId%3A2284294711424769785589%2CVSRPtargetId%3A3199967%2CVSRPcmpt%3Aprimary"><img class="linkedIn" src="images/linkedIn.png"/></a>
+			</p>
+		</div>
+	</p>
 </div>
+
 <div class = "menu menuUnPressed" id = "menubutton" ></div>
 <div id="footer"><div id="copyright">&copy; Copyrights  <a href="index.html">home</a></div>
 </div>
-<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/wdwcf.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
 </body>
 </html>
