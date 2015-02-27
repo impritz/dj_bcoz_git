@@ -394,6 +394,11 @@ right: 22%;
 	.carrersDisplayContent ,#displayBox{
 		height: 46%;
 	}
+	#smain label {
+		position: absolute;
+		right: 1%;
+		left: auto;
+	}
 }
 @media (min-width: 1250px) and (max-width: 1299px){
 }

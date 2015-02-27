@@ -281,6 +281,11 @@ z-index:6;
 		left: 48.3%;
 		top: 23.07%;
 	}
+	#smain label {
+		position: absolute;
+		right: 1%;
+		left: auto;
+	}
 }
 @media (min-width: 1250px) and (max-width: 1299px){
 	#isol{

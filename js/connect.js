@@ -142,7 +142,7 @@ $(function() {
 	},function () {
 		$('.menutxt:not(#menutxt5)').fadeTo('fast','0.6').css('color',"#999999");
 	});
-	$('#displayBox').hover(function(){
+	$('#displayBox,.carrersDisplayContent').hover(function(){
 		$('.menutxt:not(#menutxt5)').fadeTo('fast','0.3');
 	},function(){
 		$('.menutxt:not(#menutxt5)').fadeTo('fast','0.6');

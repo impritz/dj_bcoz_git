@@ -265,3 +265,19 @@ left: -25%;
 	background-size:100% 100%;
 	cursor: pointer;
 }
+
+@media (min-width: 800px) and (max-width: 1024px){
+}
+@media (min-width: 1020px) and (max-width: 1249px){
+	#smain label {
+		position: absolute;
+		right: 1%;
+		left: auto;
+	}
+}
+@media (min-width: 1250px) and (max-width: 1299px){
+}
+@media (min-width: 1300px){
+}
+@media (min-width: 1600px){
+}
