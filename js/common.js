@@ -92,13 +92,13 @@ function onMenuClick(obj) {
             window.location.href = "whoweare.html";
             break;
         case 3:
-            window.location.href = "whatwedo.html";
+            window.location.href = "technology.html";
             break;
         case 4:
-            window.location.href = "inovation.html";
+            window.location.href = "approach.html";
             break;
         case 5:
-            window.location.href = "connect.html";
+            window.location.href = "careers.html";
             break;
         case 6:
             window.open("thoughts.html", '_blank').focus();
