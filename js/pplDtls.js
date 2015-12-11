@@ -4,7 +4,7 @@ var people = [
         "name": "Mr. Apu Saha",
         "designation": "Founder and Director",
         "image": "images/people/apu.jpg",
-        "text": "Mr. Apu Saha is a telecom and software technocrat with 17+ years of working experience in core strategic technical and business leadership department (OEM & ODM). He has implemented nation- wide technical solution worth multi-million dollar from concept-to- cash, working closely with private enterprise, as well as public and IP network for companies such as- Nortel, Siemens, Alcatel Lucent, British Telecom, Uninor, to name a few. <br/> <br/> <i style = 'font-size: 0.85em;padding-bottom: 1em;' > He is amongst few individuals who have been involved from the inception of various emerging telecom technologies deployment into real world business & public solutions such as- SS7, H.323 and SIP, MPLS, CAMEL & Embedded Software technique. He is trained in telecom and business technology by world class industrial and academic labs, such as – Siemens lab, IIT Chennai, Enterprise Architecting (Zachman) and RoamWare. </i>"}
+        "text": "Mr. Apu Saha is a telecom and software technocrat with 17+ years of working experience in core strategic technical and business leadership department (OEM & ODM). He has implemented nation- wide technical solution worth multi-million dollar from concept-to- cash, working closely with private enterprise, as well as public and IP network for companies such as- Nortel, Siemens, Alcatel Lucent, British Telecom, Uninor, to name a few. <br/> <br/> <i style = 'font-size: 0.85em;padding-bottom: 1em;' > He is amongst few individuals who have been involved from the inception of various emerging telecom technologies deployment into real world business & public solutions such as- SS7, H.323 and SIP, MPLS, CAMEL & Embedded Software technique. He is trained in telecom and business technology by world class industrial and academic labs, such as - Siemens lab, IIT Chennai, Enterprise Architecting (Zachman) and RoamWare. </i>"}
 		,{"type": "founderbtn",
         "name": "Dr. Vijay Mishra",
         "designation": "Technology Fellow",
@@ -25,13 +25,13 @@ var people = [
         "name": "Mr. Marichi Mathur",
         "designation": "Advisor Customer Acquisation",
         "image": "images/people/marichi.jpg",
-        "text": "In his capacity as Advisor, he designs the customer acquisition and service delivery plan. <br/>  He is a MBA from Narsee Monjee Institute of Management. A seasoned Telecom and FMCG professional with over 14 years of experience in Sales and Distribution, Retail and Channel development, product introduction and life cycle management. Having successfully setup and managed business operations across India, Middle East and Africa. He demonstrates an entrepreneurial mind set and brings in strong capabilities in setting up and leading teams in multicultural and cross functional environments. He has worked for organisations such as Cadbury India, Nokia Corporation and is currently heading sales and operations in a leading e-commerce company in India."}
+        "text": "In his capacity as Advisor, he designs the customer acquisition and service delivery plan. <br/>  He is a MBA from Narsee Monjee Institute of Management. A seasoned Telecom and FMCG professional with over 14 years of experience in Sales and Distribution, Retail and Channel development, product introduction and life cycle management. Having successfully setup and managed business operations across India, Middle East and Africa. He demonstrates an entrepreneurial mind set and brings in strong capabilities in setting up and leading teams in multicultural and cross functional environments. He has worked for organisations such as Cadbury India, Nokia Corporation and is currently heading sales and operations in a leading e-commerce company in India. He championed and introduced the NDD - Next Day Delivery model in the country and successfully executed across the country."}
 //		BOARD OF DIRECTORS
 		,{"type": "boarddirectorsbtn",
         "name": "Mr. Apu Saha",
         "designation": "Founder and Director",
         "image": "images/people/apu.jpg",
-        "text": "Mr. Apu Saha is a telecom and software technocrat with 17+ years of working experience in core strategic technical and business leadership department (OEM & ODM). He has implemented nation- wide technical solution worth multi-million dollar from concept-to- cash, working closely with private enterprise, as well as public and IP network for companies such as- Nortel, Siemens, Alcatel Lucent, British Telecom, Uninor, to name a few. <br/> <br/> <i style = 'font-size: 0.85em;padding-bottom: 1em;' > He is amongst few individuals who have been involved from the inception of various emerging telecom technologies deployment into real world business & public solutions such as- SS7, H.323 and SIP, MPLS, CAMEL & Embedded Software technique. He is trained in telecom and business technology by world class industrial and academic labs, such as – Siemens lab, IIT Chennai, Enterprise Architecting (Zachman) and RoamWare. </i>"}
+        "text": "Mr. Apu Saha is a telecom and software technocrat with 17+ years of working experience in core strategic technical and business leadership department (OEM & ODM). He has implemented nation- wide technical solution worth multi-million dollar from concept-to- cash, working closely with private enterprise, as well as public and IP network for companies such as- Nortel, Siemens, Alcatel Lucent, British Telecom, Uninor, to name a few. <br/> <br/> <i style = 'font-size: 0.85em;padding-bottom: 1em;' > He is amongst few individuals who have been involved from the inception of various emerging telecom technologies deployment into real world business & public solutions such as- SS7, H.323 and SIP, MPLS, CAMEL & Embedded Software technique. He is trained in telecom and business technology by world class industrial and academic labs, such as - Siemens lab, IIT Chennai, Enterprise Architecting (Zachman) and RoamWare. </i>"}
 		,{"type": "boarddirectorsbtn",
         "name": "Mr. Viresh Shankar Mathur",
         "designation": "Director",
@@ -42,16 +42,72 @@ var people = [
 		"designation":"Director",
 		"image":"images/people/abhay.jpg",
 		"text":"An IIM an IIT graduate, Mr. Kale was among first batch of software engineers working on export projects for TCS. His professional expertise pans industries and geographies having worked for the pharmacy, property and nuclear industries across Europe, Australia, India and USA. He is widely regarded as an expert in Business Systems Architect, Application & large data base modelling and performance engineering of IT systems. "}
+		,{"type": "boarddirectorsbtn",
+        "name": "Pallavi S",
+        "designation": "",
+        "image": "images/people/palavi.jpg",
+        "text": "An MBA from the University of Pune, Ms. Pallavi has been involved in the BCausE vision since its inception and will play the role of Resource Fellow. The BCausE model necessitates values such as co-creation and co-esteem and her role will be to create and sustain the nucleus and manage all inter-personal interactions."}
 //		INVESTORS
 		,{"type": "invesbtn",
         "name": "Marquee Angels,<br/>Founder and Founder Family",
         "designation": "",
-        "image": "",
+        "image": "images/people/default.jpg",
         "text": "Marquee Angels,<br/>Founder and Founder Family"}
 //		ASSOCIATE FELLOW
 		,{"type": "assfellowbtn",
-        "name": "Pallavi S",
+        "name": "Neetika Lakhtakia",
         "designation": "",
-        "image": "",
-        "text": "An MBA from the University of Pune, Ms. Pallavi has been involved in the BCausE vision since its inception and will play the role of Resource Fellow. The BCausE model necessitates values such as co-creation and co-esteem and her role will be to create and sustain the nucleus and manage all inter-personal interactions."}
+        "image": "images/people/Neetika_Lakhtakia.jpg",
+        "text": ""}
+		,{"type": "assfellowbtn",
+        "name": "Sunayana Chakradhara",
+        "designation": "",
+        "image": "images/people/Sunayana_Chakradhara.jpg",
+        "text": ""}
+		,{"type": "assfellowbtn",
+        "name": "Srija Rangineni",
+        "designation": "",
+        "image": "images/people/Srija_Rangineni.jpg",
+        "text": ""}
+		,{"type": "assfellowbtn",
+        "name": "Divyanshu Kapoor",
+        "designation": "",
+        "image": "images/people/Divyanshu_Kapoor.jpg",
+        "text": ""}
+		,{"type": "assfellowbtn",
+        "name": "Koushik Khan",
+        "designation": "",
+        "image": "images/people/Koushik_Khan.jpg",
+        "text": ""}
+		,{"type": "assfellowbtn",
+        "name": "Nitin Chaudhary",
+        "designation": "",
+        "image": "images/people/Nitin_Chaudhary.jpg",
+        "text": ""}
+		,{"type": "assfellowbtn",
+        "name": "Ankit Kumar Sharma",
+        "designation": "",
+        "image": "images/people/Ankit_Kumar_Sharma.jpg",
+        "text": ""}
+		,{"type": "assfellowbtn",
+        "name": "Nagendra Pratap Singh",
+        "designation": "",
+        "image": "images/people/Nagendra_Pratap_Singh.jpg",
+        "text": ""}
+		,{"type": "assfellowbtn",
+        "name": "Joy Mustafi",
+        "designation": "",
+        "image": "images/people/Joy_Mustafi.jpg",
+        "text": ""}
+		//ENABLER
+		,{"type": "consfellowbtn",
+        "name": "Nimish Chauhan",
+        "designation": "",
+        "image": "images/people/Nimish_Chauhan.jpg",
+        "text": ""}
+		,{"type": "consfellowbtn",
+        "name": "Rakesh Lal",
+        "designation": "",
+        "image": "images/people/Rakesh_Lal.jpg",
+        "text": ""}
 		];

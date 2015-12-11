@@ -28,18 +28,6 @@ body{
 #m4{
 	top: 30%;
 }
-
-#displayBox #title{
-	background: #ede8e8;
-	opacity:0.95;
-	border-radius: 5px;
-	color: #ff6600;
-	font-family: myraid,'Myriad Pro',sans-serif;
-	font-style: normal;
-	font-size: 1.2em;
-	padding: 2% 0 1% 1%;
-	text-align: center;
-}
 #menubutton{
 	text-align:center;
 	top:80%;
@@ -75,8 +63,8 @@ background-position: 70% 70%;
 	display: none;
 	font-family: myraid,'Myriad Pro',sans-serif;
 	position: absolute;
-	top: 35%;
-	left: 50%;
+	top: 12%;
+	left: 37%;
 	width: 27%;
 	background: #b4c1d3;
 	height: 350px;
@@ -84,6 +72,36 @@ background-position: 70% 70%;
 	color: #093257;
 	border-radius: 10px;
 	z-index: 6;
+	padding: 10px;
+}
+#displayBox .indcontent p {
+    overflow: visible;
+}
+#displayBox .closeBtn{
+	float: right;
+	padding-left: 5px;
+	cursor: pointer;
+}
+#displayMainInfo{
+	background: none repeat scroll 0 0 #b4c1d3;
+    border-radius: 10px;
+    font-family: myraid;
+    font-size: 0.85em;
+    padding: 6px;
+    position: absolute;
+    text-align: center;
+}
+.picHead {
+    border-radius: 50px;
+    height: 90px;
+    margin: auto;
+    width: 90px;
+	margin: 10px;
+	float: left;
+	cursor: pointer;
+}
+.picContent {
+    display: none;
 }
 .icon{
 	width: 80px;
@@ -175,15 +193,15 @@ cursor: pointer;
 }
 #n1{
 	top: 43%;
-	left: -50%;
+	left: -23%;
 }
 #n2{
 	top: 14%;
-	left: -26%;
+	left: -10%;
 }
 #n3{
 	top: 11%;
-	right: 4%;
+	right: 1%;
 }
 #n4{
 	top: 27%;

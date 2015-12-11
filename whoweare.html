@@ -8,24 +8,18 @@
 	<title>BCausE - Who We Are : An Inventive Innovation driven Next Generation Product Company</title>
 	<meta name="description" content="BCausE Enterprise Pvt. Ltd. A product company, with an in-house R&D based on Design Thinking & Process engineering. We are an emerging next generation Consumer electronic company introducing and commercializing proprietary HW and SW product to enable a PAAS based business.">
 	
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=10122015" />
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/common.css">
     <link rel="stylesheet" type="text/css" href="style/wwr.css">
     <link rel="stylesheet" href="style/jquery-ui.css">
 	<script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <!--<script src="js/jquery-ui.js"></script>-->
     <!--[if lt IE 9]>
 	<link rel="stylesheet" type="text/css" href="style/ie8.css">
 	<![endif]-->
-	<style>
-		.con img.listImage { height: 45px; float: left; padding: 0 10px 0 0;}
-		#.con div.listHead { height: 45px;}
-		#.con div.listHead label { padding-left: 10px}
-		.con div.indcontent { display:none;}
-	</style>
 </head>
 
 <body>
@@ -59,26 +53,31 @@
     <div id="atom">
         <div class="aPoints" id="cpo" data="boardadvisorsbtn"><span>BOARD OF ADVISORS</span><label></label></div>
         <div class="aPoints" id="bm" data="boarddirectorsbtn"><label></label><span>BOARD OF DIRECTORS</span></div>
-		<div class="aPoints" id="n1" data="assfellowbtn"><span>ASSOCIATE FELLOW</span><label></label></div>
-		<div class="aPoints" id="n2" data="consfellowbtn" ><span>CONSULTANT FELLOW</span><label></label></div>
-		<div class="aPoints" id="n3" data="invesbtn"><label></label><span>INVESTOR</span></div>
+		<div class="aPoints" id="n1" data="assfellowbtn"><span>FELLOWS</span><label></label></div>
+		<!--<div class="aPoints" id="n2" data="invesbtn"><span>INVESTOR</span><label></label></div>-->
+		<div class="aPoints" id="n3" data="consfellowbtn" ><label></label><span>ENABLERS</span></div>
 		<!--<div class="aPoints" id="n4" data="newfour"><label></label><span>NEW - FOUR</span></div>-->
-        <div class="aPoints agPoints" id="foun" data="founderbtn"><label></label><span>FOUNDING MATE</span></div>
+        <div class="aPoints agPoints" id="foun" data="founderbtn"><label></label><span>FOUNDERS</span></div>
     </div>
     <div class="menu menuUnPressed" id="pointsutton"></div>
-    <div id="displayBox">
-		<div id="confounderbtn" class="con vcon"> <div class="chead" id="title"> <label>FOUNDING MATE</label> </div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>
-		<div id="coninvesbtn" class="con"><div class="chead" id="title"><label>INVESTOR</label></div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>
-		<!--<div id="connewfour" class="con"> <div class="chead" id="title"> <label>NEW FOUR</label></div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>-->
-        <div id="conboarddirectorsbtn" class="con"> <div class="chead" id="title"> <label>BOARD OF DIRECTORS</label></div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>
-		<div id="conboardadvisorsbtn" class="con"> <div class="chead" id="title"> <label>BOARD OF ADVISORS</label></div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>
-		<div id="conassfellowbtn" class="con"> <div class="chead" id="title"> <label>ASSOCIATE FELLOW</label></div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>
-		<div id="conconsfellowbtn" class="con"> <div class="chead" id="title"> <label>CONSULTANT FELLOW</label></div> <div class="articleContent"><div class="concontent"></div><div class="indcontent"></div></div></div>
+	<div id="displayBox" style="display: none;">
+		<img class="closeBtn" src="images/close.png" />
+		<div class="indcontent"></div>
+	</div>
+	<div id="displayMainInfo" ></div>
+	<div id="displayPic" style="position: absolute; left: 10%; width: 80%; top: 70%; text-align: center; display: none;">
+		<div id="confounderbtn" class="con"> <div class="concontent"></div></div>
+		<div id="coninvesbtn" class="con"> <div class="concontent"></div></div>
+		<div id="conboarddirectorsbtn" class="con"> <div class="concontent"></div></div>
+		<div id="conboardadvisorsbtn" class="con"> <div class="concontent"></div></div>
+		<div id="conassfellowbtn" class="con"> <div class="concontent"></div></div>
+		<div id="conconsfellowbtn" class="con"> <div class="concontent"></div></div>
         <div id="cont">
-            <div id="bk"></div><div id="nl"></div><div id="nr"></div>
-        </div>
-    </div>
-    <div id="footer">
+            <div id="bk"></div>
+			<!--<div id="nl"></div><div id="nr"></div> -->
+        </div>		
+	</div>
+	<div id="footer">
         <div id="copyright">&copy; Copyrights <a href="index.html">home</a>
         </div>
     </div>
